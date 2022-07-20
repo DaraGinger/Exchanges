@@ -1,0 +1,12 @@
+E:\Users\Дарина\source\repos\Exchange\Exchange\bin\Debug\Exchange.exe.config
+E:\Users\Дарина\source\repos\Exchange\Exchange\bin\Debug\Exchange.exe
+E:\Users\Дарина\source\repos\Exchange\Exchange\bin\Debug\Exchange.pdb
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.AssemblyReference.cache
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.SuggestedBindingRedirects.cache
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.Exchange.resources
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.Properties.Resources.resources
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.Update.resources
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.GenerateResource.cache
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.exe
+E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.pdb
