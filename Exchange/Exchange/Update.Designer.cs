@@ -160,34 +160,35 @@
             this.UsdBuyText.Name = "UsdBuyText";
             this.UsdBuyText.Size = new System.Drawing.Size(100, 20);
             this.UsdBuyText.TabIndex = 9;
+            this.UsdBuyText.TextChanged += new System.EventHandler(this.UsdBuyText_TextChanged);
             // 
             // EurBuyText
             // 
             this.EurBuyText.Location = new System.Drawing.Point(50, 281);
             this.EurBuyText.Name = "EurBuyText";
             this.EurBuyText.Size = new System.Drawing.Size(100, 20);
-            this.EurBuyText.TabIndex = 10;
+            this.EurBuyText.TabIndex = 11;
             // 
             // PlnBuyText
             // 
             this.PlnBuyText.Location = new System.Drawing.Point(50, 377);
             this.PlnBuyText.Name = "PlnBuyText";
             this.PlnBuyText.Size = new System.Drawing.Size(100, 20);
-            this.PlnBuyText.TabIndex = 11;
+            this.PlnBuyText.TabIndex = 13;
             // 
             // UsdSellText
             // 
             this.UsdSellText.Location = new System.Drawing.Point(319, 182);
             this.UsdSellText.Name = "UsdSellText";
             this.UsdSellText.Size = new System.Drawing.Size(100, 20);
-            this.UsdSellText.TabIndex = 12;
+            this.UsdSellText.TabIndex = 10;
             // 
             // EurSellText
             // 
             this.EurSellText.Location = new System.Drawing.Point(319, 281);
             this.EurSellText.Name = "EurSellText";
             this.EurSellText.Size = new System.Drawing.Size(100, 20);
-            this.EurSellText.TabIndex = 13;
+            this.EurSellText.TabIndex = 12;
             // 
             // PlnSellText
             // 
@@ -208,6 +209,7 @@
             this.SaveButton.TabIndex = 15;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // CancelButton
             // 
@@ -221,6 +223,7 @@
             this.CancelButton.TabIndex = 16;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = false;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // Update
             // 
@@ -246,6 +249,7 @@
             this.Controls.Add(this.UsdLabel);
             this.Controls.Add(this.panel1);
             this.Name = "Update";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -269,12 +273,12 @@
         private System.Windows.Forms.PictureBox PlnFlagPicture;
         private System.Windows.Forms.PictureBox EurFlagPicture;
         private System.Windows.Forms.PictureBox UsdFlagPicture;
-        private System.Windows.Forms.TextBox UsdBuyText;
-        private System.Windows.Forms.TextBox EurBuyText;
-        private System.Windows.Forms.TextBox PlnBuyText;
-        private System.Windows.Forms.TextBox UsdSellText;
-        private System.Windows.Forms.TextBox EurSellText;
-        private System.Windows.Forms.TextBox PlnSellText;
+        public System.Windows.Forms.TextBox UsdBuyText;
+        public System.Windows.Forms.TextBox EurBuyText;
+        public System.Windows.Forms.TextBox PlnBuyText;
+        public System.Windows.Forms.TextBox UsdSellText;
+        public System.Windows.Forms.TextBox EurSellText;
+        public System.Windows.Forms.TextBox PlnSellText;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CancelButton;
     }
