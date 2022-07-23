@@ -10,3 +10,15 @@ E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.G
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.exe
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.pdb
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\bin\Debug\Exchange.exe.config
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\bin\Debug\Exchange.exe
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\bin\Debug\Exchange.pdb
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Exchange.resources
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Update.resources
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.exe
+C:\Users\Admin\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.pdb
