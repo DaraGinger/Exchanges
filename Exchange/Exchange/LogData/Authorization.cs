@@ -4,10 +4,11 @@
     using System.IO;
     using System.Windows.Forms;
     public partial class Authorization : Form
-    {
-        private string password;
+    {    
         private string login;
-        private string path = Path.GetFullPath(@"C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\LogData\Logs\MyLogs.txt");
+        private string password;
+        private string path = Path.GetFullPath(
+            @"C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\LogData\Logs\MyLogs.txt");
 
         public Authorization()
         {
@@ -34,8 +35,8 @@
             string[] passwordData = new string[readData.Length];
             int countLoginArray = 0;
             int countPasswordArray = 0;
-            int correctLoginCount = 0;
-            int correctPasswordCount = 0;
+            int correctCount = 0;
+
            
             for (int i = 0; i < readData.Length; i++)
             {
@@ -53,29 +54,24 @@
 
             if (this.LoginField.Text.Length > 0 && this.PasswordField.Text.Length > 0)
             {
-                for (int i = 0; i < loginData.Length; i++)
+                for (int i = 0; i < readData.Length / 2; i++)
                 {
-                    if (this.LoginField.Text == loginData[i])
+                    if (this.LoginField.Text == loginData[i] && this.PasswordField.Text == passwordData[i])
                     {
-                        correctLoginCount++;
+                        correctCount++;
                         break;
                     }
                 }
 
-                for (int i = 0; i < passwordData.Length; i++)
-                {
-                    if (this.PasswordField.Text == passwordData[i])
-                    {
-                        correctPasswordCount++;
-                        break;
-                    }
-                }
-
-                if (correctLoginCount == 1 && correctPasswordCount == 1)
+                if (correctCount == 1)
                 {
                     Exchange exchange = new Exchange();
                     exchange.Show();
                     this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong logs!");
                 }
             }
             else if (this.LoginField.Text.Length <= 0 && this.PasswordField.Text.Length <= 0)
@@ -90,6 +86,13 @@
             {
                 MessageBox.Show("Empty password field!");
             }
+        }
+
+        private void ResetPasswordLabelLink_Click(object sender, EventArgs e)
+        {
+            PasswordRecovery passwordRecovery = new PasswordRecovery();
+            passwordRecovery.Show();
+            this.Hide();
         }
 
         private void Authorization_Load(object sender, EventArgs e)

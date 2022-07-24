@@ -25,3 +25,4 @@ C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.cspro
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.exe
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.pdb
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.LogData.MainSelectionMenu.resources
+C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.LogData.PasswordRecovery.resources

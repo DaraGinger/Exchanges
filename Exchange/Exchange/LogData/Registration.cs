@@ -4,11 +4,12 @@
     using System.Windows.Forms;
     using System.IO;
     public partial class Registration : Form
-    {
+    {   
+        private string login;
         private string password;
         private string repeatPassword;
-        private string login;
-        private string path = Path.GetFullPath(@"C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\LogData\Logs\MyLogs.txt");
+        private string path = Path.GetFullPath(
+            @"C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\LogData\Logs\MyLogs.txt");
 
         public Registration()
         {

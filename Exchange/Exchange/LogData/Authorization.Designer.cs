@@ -34,6 +34,7 @@
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.SignInButton = new System.Windows.Forms.Button();
             this.FormName = new System.Windows.Forms.Label();
+            this.ResetPasswordLabelLink = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // LoginField
@@ -104,12 +105,29 @@
             this.FormName.Text = "Authorization";
             this.FormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ResetPasswordLabelLink
+            // 
+            this.ResetPasswordLabelLink.BackColor = System.Drawing.Color.Transparent;
+            this.ResetPasswordLabelLink.DisabledLinkColor = System.Drawing.Color.Transparent;
+            this.ResetPasswordLabelLink.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ResetPasswordLabelLink.LinkColor = System.Drawing.Color.White;
+            this.ResetPasswordLabelLink.Location = new System.Drawing.Point(115, 264);
+            this.ResetPasswordLabelLink.Name = "ResetPasswordLabelLink";
+            this.ResetPasswordLabelLink.Size = new System.Drawing.Size(231, 23);
+            this.ResetPasswordLabelLink.TabIndex = 6;
+            this.ResetPasswordLabelLink.TabStop = true;
+            this.ResetPasswordLabelLink.Text = "Forgot your password?";
+            this.ResetPasswordLabelLink.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ResetPasswordLabelLink.VisitedLinkColor = System.Drawing.Color.White;
+            this.ResetPasswordLabelLink.Click += new System.EventHandler(ResetPasswordLabelLink_Click);
+            // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.ResetPasswordLabelLink);
             this.Controls.Add(this.FormName);
             this.Controls.Add(this.SignInButton);
             this.Controls.Add(this.PasswordLabel);
@@ -133,5 +151,6 @@
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.Label FormName;
+        private System.Windows.Forms.LinkLabel ResetPasswordLabelLink;
     }
 }
