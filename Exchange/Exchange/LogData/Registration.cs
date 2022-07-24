@@ -46,8 +46,8 @@
                     sw.WriteLine(this.password);
                 }
 
-                Exchange exchange = new Exchange();
-                exchange.Show();
+                Authorization authorization = new Authorization();
+                authorization.Show();
                 this.Hide();
             }
             else
