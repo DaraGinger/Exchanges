@@ -63,31 +63,31 @@
             // ExchangeLabel
             // 
             this.ExchangeLabel.AutoSize = true;
-            this.ExchangeLabel.Font = new System.Drawing.Font("Bookman Old Style", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExchangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExchangeLabel.ForeColor = System.Drawing.Color.Gold;
             this.ExchangeLabel.Location = new System.Drawing.Point(75, 0);
             this.ExchangeLabel.Name = "ExchangeLabel";
-            this.ExchangeLabel.Size = new System.Drawing.Size(329, 47);
+            this.ExchangeLabel.Size = new System.Drawing.Size(307, 46);
             this.ExchangeLabel.TabIndex = 1;
             this.ExchangeLabel.Text = "Exchange Rate";
             // 
             // BuyLabel
             // 
             this.BuyLabel.AutoSize = true;
-            this.BuyLabel.Font = new System.Drawing.Font("Bookman Old Style", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BuyLabel.Location = new System.Drawing.Point(49, 107);
             this.BuyLabel.Name = "BuyLabel";
-            this.BuyLabel.Size = new System.Drawing.Size(84, 40);
+            this.BuyLabel.Size = new System.Drawing.Size(79, 39);
             this.BuyLabel.TabIndex = 1;
             this.BuyLabel.Text = "Buy";
             // 
             // UsdLabel
             // 
             this.UsdLabel.AutoSize = true;
-            this.UsdLabel.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsdLabel.Location = new System.Drawing.Point(197, 166);
             this.UsdLabel.Name = "UsdLabel";
-            this.UsdLabel.Size = new System.Drawing.Size(65, 28);
+            this.UsdLabel.Size = new System.Drawing.Size(66, 29);
             this.UsdLabel.TabIndex = 2;
             this.UsdLabel.Text = "USD";
             this.UsdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,30 +95,30 @@
             // SellLabel
             // 
             this.SellLabel.AutoSize = true;
-            this.SellLabel.Font = new System.Drawing.Font("Bookman Old Style", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SellLabel.Location = new System.Drawing.Point(318, 107);
             this.SellLabel.Name = "SellLabel";
-            this.SellLabel.Size = new System.Drawing.Size(83, 40);
+            this.SellLabel.Size = new System.Drawing.Size(79, 39);
             this.SellLabel.TabIndex = 3;
             this.SellLabel.Text = "Sell";
             // 
             // EurLabel
             // 
             this.EurLabel.AutoSize = true;
-            this.EurLabel.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EurLabel.Location = new System.Drawing.Point(196, 260);
             this.EurLabel.Name = "EurLabel";
-            this.EurLabel.Size = new System.Drawing.Size(66, 28);
+            this.EurLabel.Size = new System.Drawing.Size(66, 29);
             this.EurLabel.TabIndex = 4;
             this.EurLabel.Text = "EUR";
             // 
             // PlnLabel
             // 
             this.PlnLabel.AutoSize = true;
-            this.PlnLabel.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnLabel.Location = new System.Drawing.Point(197, 358);
             this.PlnLabel.Name = "PlnLabel";
-            this.PlnLabel.Size = new System.Drawing.Size(61, 28);
+            this.PlnLabel.Size = new System.Drawing.Size(63, 29);
             this.PlnLabel.TabIndex = 5;
             this.PlnLabel.Text = "PLN";
             // 
@@ -155,60 +155,60 @@
             // UsdBuyLabel
             // 
             this.UsdBuyLabel.AutoSize = true;
-            this.UsdBuyLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsdBuyLabel.Location = new System.Drawing.Point(50, 182);
             this.UsdBuyLabel.Name = "UsdBuyLabel";
-            this.UsdBuyLabel.Size = new System.Drawing.Size(95, 32);
+            this.UsdBuyLabel.Size = new System.Drawing.Size(87, 31);
             this.UsdBuyLabel.TabIndex = 9;
             this.UsdBuyLabel.Text = "27.50";
             // 
             // UsdSellLabel
             // 
             this.UsdSellLabel.AutoSize = true;
-            this.UsdSellLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsdSellLabel.Location = new System.Drawing.Point(319, 182);
             this.UsdSellLabel.Name = "UsdSellLabel";
-            this.UsdSellLabel.Size = new System.Drawing.Size(95, 32);
+            this.UsdSellLabel.Size = new System.Drawing.Size(87, 31);
             this.UsdSellLabel.TabIndex = 10;
             this.UsdSellLabel.Text = "28.40";
             // 
             // EurBuyLabel
             // 
             this.EurBuyLabel.AutoSize = true;
-            this.EurBuyLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EurBuyLabel.Location = new System.Drawing.Point(50, 281);
             this.EurBuyLabel.Name = "EurBuyLabel";
-            this.EurBuyLabel.Size = new System.Drawing.Size(95, 32);
+            this.EurBuyLabel.Size = new System.Drawing.Size(87, 31);
             this.EurBuyLabel.TabIndex = 11;
             this.EurBuyLabel.Text = "31.65";
             // 
             // EurSellLabel
             // 
             this.EurSellLabel.AutoSize = true;
-            this.EurSellLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EurSellLabel.Location = new System.Drawing.Point(319, 281);
             this.EurSellLabel.Name = "EurSellLabel";
-            this.EurSellLabel.Size = new System.Drawing.Size(95, 32);
+            this.EurSellLabel.Size = new System.Drawing.Size(87, 31);
             this.EurSellLabel.TabIndex = 12;
             this.EurSellLabel.Text = "32.30";
             // 
             // PlnBuyLabel
             // 
             this.PlnBuyLabel.AutoSize = true;
-            this.PlnBuyLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnBuyLabel.Location = new System.Drawing.Point(56, 377);
             this.PlnBuyLabel.Name = "PlnBuyLabel";
-            this.PlnBuyLabel.Size = new System.Drawing.Size(77, 32);
+            this.PlnBuyLabel.Size = new System.Drawing.Size(71, 31);
             this.PlnBuyLabel.TabIndex = 13;
             this.PlnBuyLabel.Text = "5.80";
             // 
             // PlnSellLabel
             // 
             this.PlnSellLabel.AutoSize = true;
-            this.PlnSellLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnSellLabel.Location = new System.Drawing.Point(337, 377);
             this.PlnSellLabel.Name = "PlnSellLabel";
-            this.PlnSellLabel.Size = new System.Drawing.Size(77, 32);
+            this.PlnSellLabel.Size = new System.Drawing.Size(71, 31);
             this.PlnSellLabel.TabIndex = 14;
             this.PlnSellLabel.Text = "6.66";
             // 
@@ -218,7 +218,7 @@
             this.UpdasteButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpdasteButton.FlatAppearance.BorderSize = 0;
             this.UpdasteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdasteButton.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UpdasteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UpdasteButton.ForeColor = System.Drawing.Color.Gold;
             this.UpdasteButton.Location = new System.Drawing.Point(175, 464);
             this.UpdasteButton.Name = "UpdasteButton";
@@ -250,6 +250,7 @@
             this.Controls.Add(this.UsdLabel);
             this.Controls.Add(this.BuyLabel);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Exchange";
             this.Text = "Exchange";
             this.panel1.ResumeLayout(false);

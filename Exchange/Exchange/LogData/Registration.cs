@@ -1,38 +1,62 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Exchange.LogData
+﻿namespace Exchange.LogData
 {
+    using System;
+    using System.Windows.Forms;
+    using System.IO;
     public partial class Registration : Form
     {
+        private string password;
+        private string repeatPassword;
+        private string login;
+        private string path = Path.GetFullPath(@"C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\LogData\Logs\MyLogs.txt");
+
         public Registration()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void LoginField_TextChanged(object sender, EventArgs e)
         {
-
+            this.LoginField.MaxLength = 16;
+            this.login = this.LoginField.Text;
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void PasswordField_TextChanged(object sender, EventArgs e)
         {
+            this.PasswordField.PasswordChar = '*';
+            this.PasswordField.MaxLength = 16;
+            this.password = this.PasswordField.Text;
+        }
 
+        private void RepeatPasswordField_Click(object sender, EventArgs e)
+        {
+            this.RepeatPasswordField.PasswordChar = '*';
+            this.RepeatPasswordField.MaxLength = 16;
+            this.repeatPassword = this.RepeatPasswordField.Text;
+        }
+
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+            if (this.LoginField.Text.Length > 0 && this.PasswordField.Text.Length > 0 &&
+                password == repeatPassword)
+            {
+                using (StreamWriter sw = File.AppendText(this.path))
+                {
+                    sw.WriteLine(this.login);
+                    sw.WriteLine(this.password);
+                }
+
+                Exchange exchange = new Exchange();
+                exchange.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("ERROR! Pls try again!");
+            }
         }
 
         private void Registration_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
         {
 
         }

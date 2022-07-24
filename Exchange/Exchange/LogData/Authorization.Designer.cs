@@ -28,96 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authorization));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LoginField = new System.Windows.Forms.TextBox();
+            this.PasswordField = new System.Windows.Forms.TextBox();
+            this.LoginLabel = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.SignInButton = new System.Windows.Forms.Button();
+            this.FormName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // LoginField
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 164);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 32);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.LoginField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginField.Location = new System.Drawing.Point(115, 159);
+            this.LoginField.Multiline = true;
+            this.LoginField.Name = "LoginField";
+            this.LoginField.Size = new System.Drawing.Size(231, 32);
+            this.LoginField.TabIndex = 0;
+            this.LoginField.TextChanged += new System.EventHandler(this.LoginField_TextChanged);
             // 
-            // textBox2
+            // PasswordField
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 235);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 32);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.PasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordField.Location = new System.Drawing.Point(115, 229);
+            this.PasswordField.Multiline = true;
+            this.PasswordField.Name = "PasswordField";
+            this.PasswordField.Size = new System.Drawing.Size(231, 32);
+            this.PasswordField.TabIndex = 1;
+            this.PasswordField.TextChanged += new System.EventHandler(this.PasswordField_TextChanged);
             // 
-            // label1
+            // LoginLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(212, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Login";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.LoginLabel.BackColor = System.Drawing.Color.Transparent;
+            this.LoginLabel.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginLabel.Location = new System.Drawing.Point(115, 134);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(231, 23);
+            this.LoginLabel.TabIndex = 2;
+            this.LoginLabel.Text = "Login";
+            this.LoginLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // PasswordLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(197, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 22);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.PasswordLabel.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordLabel.Location = new System.Drawing.Point(115, 204);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(227, 24);
+            this.PasswordLabel.TabIndex = 3;
+            this.PasswordLabel.Text = "Password";
+            this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // SignInButton
             // 
-            this.button1.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(125, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Sign in";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SignInButton.BackColor = System.Drawing.Color.White;
+            this.SignInButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SignInButton.Location = new System.Drawing.Point(115, 299);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(231, 32);
+            this.SignInButton.TabIndex = 4;
+            this.SignInButton.Text = "Sign in";
+            this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
-            // label3
+            // FormName
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(0, -1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(462, 50);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Authorization";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.FormName.BackColor = System.Drawing.Color.White;
+            this.FormName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FormName.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FormName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormName.Location = new System.Drawing.Point(0, -1);
+            this.FormName.Name = "FormName";
+            this.FormName.Size = new System.Drawing.Size(462, 50);
+            this.FormName.TabIndex = 5;
+            this.FormName.Text = "Authorization";
+            this.FormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FormName);
+            this.Controls.Add(this.SignInButton);
+            this.Controls.Add(this.PasswordLabel);
+            this.Controls.Add(this.LoginLabel);
+            this.Controls.Add(this.PasswordField);
+            this.Controls.Add(this.LoginField);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Authorization";
             this.Text = "Authorization";
             this.Load += new System.EventHandler(this.Authorization_Load);
@@ -128,11 +127,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox LoginField;
+        private System.Windows.Forms.TextBox PasswordField;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.Button SignInButton;
+        private System.Windows.Forms.Label FormName;
     }
 }

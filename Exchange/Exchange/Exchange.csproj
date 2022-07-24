@@ -58,6 +58,12 @@
     <Compile Include="LogData\Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogData\MainSelectionMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogData\MainSelectionMenu.Designer.cs">
+      <DependentUpon>MainSelectionMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogData\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogData\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogData\MainSelectionMenu.resx">
+      <DependentUpon>MainSelectionMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogData\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
@@ -107,11 +116,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="LogData\Logs\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="imagines\eurFlag.png" />
     <Content Include="imagines\plnFlag.png" />
     <Content Include="imagines\usdFlag.jpg" />
+    <None Include="imagines\WoodWorkplace.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
