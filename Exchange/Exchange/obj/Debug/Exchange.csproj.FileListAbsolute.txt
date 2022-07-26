@@ -10,3 +10,13 @@ E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.G
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.exe
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.pdb
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.AssemblyReference.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.SuggestedBindingRedirects.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Buy.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Exchange.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Properties.Resources.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Update.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.GenerateResource.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.exe
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.pdb

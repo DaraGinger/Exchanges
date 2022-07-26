@@ -66,6 +66,9 @@
     <Compile Include="Update.Designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Buy.resx">
+      <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Exchange.resx">
       <DependentUpon>Exchange.cs</DependentUpon>
     </EmbeddedResource>

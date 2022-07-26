@@ -2,8 +2,7 @@
 {
     using System;
     using System.Windows.Forms;
-    using System.IO;
-
+    
     public partial class Update : Form
     {
         public Update()
@@ -14,36 +13,23 @@
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            Exchange exchange = (Exchange)Application.OpenForms[0];
-            exchange.Show();
-            this.Close();
+            Exchange exchangePage = (Exchange)Application.OpenForms[0];
+            exchangePage.Show();
+            this.Hide();
         }
 
-        private void SaveButton_Click(object sender, EventArgs e)
+        private void UsdBuyText_KeyPress(object sender, KeyPressEventArgs key)
         {
-            
-
-                if (UsdBuyText.Text.Length == 0 && UsdSellText.Text.Length == 0 &&
-                   EurBuyText.Text.Length == 0 && EurSellText.Text.Length == 0 &&
-                   PlnBuyText.Text.Length == 0 && PlnSellText.Text.Length == 0)
+            if (Char.IsControl(key.KeyChar))
+            {
+                if(key.KeyChar == (char)Keys.Enter)
                 {
-                    SaveButton.Enabled = false;
+                    if(sender.Equals(UsdSellText))
+                    {
+                        UsdBuyText.Focus();
+                    }
                 }
-                else
-                {
-                    SaveButton.Enabled = true;
-                    Exchange exchange = (Exchange)Application.OpenForms[0];
-                    exchange.Show();
-                    this.Close();
-                }
-        }
-
-        private void UsdBuyText_TextChanged(object sender, EventArgs e)
-        {
-
-            
-
-
+            }
         }
     }
 }

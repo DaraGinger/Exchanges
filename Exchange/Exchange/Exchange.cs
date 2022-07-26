@@ -12,18 +12,20 @@
             InitializeComponent();
         }
 
-        private void UpdasteButton_Click(object sender, EventArgs e)
+        private void UpdateButton_Click(object sender, EventArgs e)
         {
             updateForm = new Update();
             updateForm.Show();
             
             updateForm.Owner = this;
+            this.Hide(); 
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void RefreshButton_Click(object sender, EventArgs e)
         {
-            if (updateForm.UsdBuyText.Text.Length == 0 )
+
+            if (updateForm.UsdBuyText.Text.Length == 0)
             {
                 UsdBuyMainText.Text = UsdBuyMainText.Text;
             }
@@ -33,7 +35,7 @@
             }
 
 
-            if (updateForm.UsdSellText.Text.Length == 0 )
+            if (updateForm.UsdSellText.Text.Length == 0)
             {
 
             }
@@ -80,6 +82,15 @@
             {
                 PlnSellMainText.Text = updateForm.PlnSellText.Text;
             }
+        }
+
+        private void BuyingButton_Click(object sender, EventArgs e)
+        {
+            Buy buyPage = new Buy();
+            buyPage.Show();
+
+            this.Hide();
+
         }
     }
 }
