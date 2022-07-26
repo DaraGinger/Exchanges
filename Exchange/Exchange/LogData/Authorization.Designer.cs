@@ -107,6 +107,7 @@
             // 
             // ResetPasswordLabelLink
             // 
+            this.ResetPasswordLabelLink.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
             this.ResetPasswordLabelLink.BackColor = System.Drawing.Color.Transparent;
             this.ResetPasswordLabelLink.DisabledLinkColor = System.Drawing.Color.Transparent;
             this.ResetPasswordLabelLink.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -119,7 +120,7 @@
             this.ResetPasswordLabelLink.Text = "Forgot your password?";
             this.ResetPasswordLabelLink.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ResetPasswordLabelLink.VisitedLinkColor = System.Drawing.Color.White;
-            this.ResetPasswordLabelLink.Click += new System.EventHandler(ResetPasswordLabelLink_Click);
+            this.ResetPasswordLabelLink.Click += new System.EventHandler(this.ResetPasswordLabelLink_Click);
             // 
             // Authorization
             // 

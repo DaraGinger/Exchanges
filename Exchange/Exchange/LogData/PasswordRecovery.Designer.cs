@@ -116,6 +116,7 @@
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.LoginField);
             this.Controls.Add(this.FormName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PasswordRecovery";
             this.Text = "Password Recovery";
             this.ResumeLayout(false);

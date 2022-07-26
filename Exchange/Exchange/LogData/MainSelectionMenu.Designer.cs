@@ -92,7 +92,7 @@
             this.SignUpButton.TabIndex = 15;
             this.SignUpButton.Text = "Sign Up";
             this.SignUpButton.UseVisualStyleBackColor = false;
-            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click); 
+            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // MainSelectionMenu
             // 
@@ -105,6 +105,7 @@
             this.Controls.Add(this.RegistrationLabel);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.FormName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainSelectionMenu";
             this.Text = "Main Selection Menu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
