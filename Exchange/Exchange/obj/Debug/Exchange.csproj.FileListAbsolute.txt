@@ -10,6 +10,7 @@ E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.G
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.exe
 E:\Users\Дарина\source\repos\Exchange\Exchange\obj\Debug\Exchange.pdb
+<<<<<<< HEAD
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\bin\Debug\Exchange.exe.config
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\bin\Debug\Exchange.exe
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\bin\Debug\Exchange.pdb
@@ -26,3 +27,15 @@ C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.exe
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.pdb
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.LogData.MainSelectionMenu.resources
 C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.LogData.PasswordRecovery.resources
+=======
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.AssemblyReference.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.SuggestedBindingRedirects.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Buy.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Exchange.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Properties.Resources.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.Update.resources
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.GenerateResource.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.exe
+D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.pdb
+>>>>>>> 922df3fb366546a4763d3e232433c702ffb0b24f
