@@ -47,8 +47,22 @@
         private void ResetPasswordLabelLink_Click(object sender, EventArgs e)
         {
             PasswordRecovery passwordRecovery = new PasswordRecovery();
-            passwordRecovery.Show();
             this.Hide();
+            passwordRecovery.StartPosition = FormStartPosition.Manual;
+            passwordRecovery.Location = this.Location;
+            passwordRecovery.Size = this.Size;
+            passwordRecovery.Show();
+        }
+
+        private void ComeBackButton_Click(object sender, EventArgs e)
+        {
+            MainSelectionMenu mainSelectionMenu = new MainSelectionMenu();
+            this.Hide();
+            mainSelectionMenu.StartPosition = FormStartPosition.Manual;
+            mainSelectionMenu.Location = this.Location;
+            mainSelectionMenu.Size = this.Size;
+            mainSelectionMenu.Show();
+            
         }
 
         private void Authorization_Load(object sender, EventArgs e)
@@ -91,8 +105,11 @@
             if (correctCount == 1)
             {
                 Exchange exchange = new Exchange();
-                exchange.Show();
                 this.Hide();
+                exchange.StartPosition = FormStartPosition.Manual;
+                exchange.Location = this.Location;
+                exchange.Size = this.Size;
+                exchange.Show();
             }
             else
             {

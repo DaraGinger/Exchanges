@@ -36,6 +36,7 @@
             this.RepeatPasswordLabel = new System.Windows.Forms.Label();
             this.RepeatPasswordField = new System.Windows.Forms.TextBox();
             this.FormName = new System.Windows.Forms.Label();
+            this.ComeBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SignUpButton
@@ -128,6 +129,18 @@
             this.FormName.Text = "Registration";
             this.FormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ComeBackButton
+            // 
+            this.ComeBackButton.BackColor = System.Drawing.Color.White;
+            this.ComeBackButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComeBackButton.Location = new System.Drawing.Point(115, 428);
+            this.ComeBackButton.Name = "ComeBackButton";
+            this.ComeBackButton.Size = new System.Drawing.Size(231, 32);
+            this.ComeBackButton.TabIndex = 13;
+            this.ComeBackButton.Text = "Come Back";
+            this.ComeBackButton.UseVisualStyleBackColor = false;
+            this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +148,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.ComeBackButton);
             this.Controls.Add(this.FormName);
             this.Controls.Add(this.RepeatPasswordLabel);
             this.Controls.Add(this.RepeatPasswordField);
@@ -146,7 +160,7 @@
             this.ForeColor = System.Drawing.SystemColors.MenuText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Registration";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Registration";
             this.Load += new System.EventHandler(this.Registration_Load);
             this.ResumeLayout(false);
@@ -164,5 +178,6 @@
         private System.Windows.Forms.Label RepeatPasswordLabel;
         private System.Windows.Forms.TextBox RepeatPasswordField;
         private System.Windows.Forms.Label FormName;
+        private System.Windows.Forms.Button ComeBackButton;
     }
 }

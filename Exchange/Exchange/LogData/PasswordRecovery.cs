@@ -45,6 +45,17 @@
             }
         }
 
+        private void ComeBackButton_Click(object sender, EventArgs e)
+        {
+            Authorization authorization = new Authorization();
+            this.Hide();
+            authorization.StartPosition = FormStartPosition.Manual;
+            authorization.Location = this.Location;
+            authorization.Size = this.Size;
+            authorization.Show();
+
+        }
+
         private void PasswordResetVerification()
         {
             string[] readData = File.ReadAllLines(this.path);
@@ -100,8 +111,11 @@
             if (correctCount == 1 && this.NewPasswordField.Text.Length > 0)
             {
                 Authorization authorization = new Authorization();
-                authorization.Show();
                 this.Hide();
+                authorization.StartPosition = FormStartPosition.Manual;
+                authorization.Location = this.Location;
+                authorization.Size = this.Size;
+                authorization.Show();
             }
             else
             {

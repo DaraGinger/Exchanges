@@ -92,7 +92,6 @@
             this.UsdBuyingText.Name = "UsdBuyingText";
             this.UsdBuyingText.Size = new System.Drawing.Size(146, 20);
             this.UsdBuyingText.TabIndex = 3;
-            this.UsdBuyingText.TextChanged += new System.EventHandler(this.UsdBuyingText_TextChanged);
             // 
             // UahUsdBuyingText
             // 

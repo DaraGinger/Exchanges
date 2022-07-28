@@ -11,15 +11,21 @@
         private void SignInButton_Click(object sender, EventArgs e)
         {
             Authorization authorization = new Authorization();
-            authorization.Show();
             this.Hide();
+            authorization.StartPosition = FormStartPosition.Manual;
+            authorization.Location = this.Location;
+            authorization.Size = this.Size;
+            authorization.Show();
         }
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             Registration registration = new Registration();
-            registration.Show();
             this.Hide();
+            registration.StartPosition = FormStartPosition.Manual;
+            registration.Location = this.Location;
+            registration.Size = this.Size;
+            registration.Show();
         }
 
         private void MainMenu_Load(object sender, EventArgs e)

@@ -35,6 +35,7 @@
             this.SignInButton = new System.Windows.Forms.Button();
             this.FormName = new System.Windows.Forms.Label();
             this.ResetPasswordLabelLink = new System.Windows.Forms.LinkLabel();
+            this.ComeBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LoginField
@@ -122,12 +123,25 @@
             this.ResetPasswordLabelLink.VisitedLinkColor = System.Drawing.Color.White;
             this.ResetPasswordLabelLink.Click += new System.EventHandler(this.ResetPasswordLabelLink_Click);
             // 
+            // ComeBackButton
+            // 
+            this.ComeBackButton.BackColor = System.Drawing.Color.White;
+            this.ComeBackButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComeBackButton.Location = new System.Drawing.Point(115, 369);
+            this.ComeBackButton.Name = "ComeBackButton";
+            this.ComeBackButton.Size = new System.Drawing.Size(231, 32);
+            this.ComeBackButton.TabIndex = 7;
+            this.ComeBackButton.Text = "Come Back";
+            this.ComeBackButton.UseVisualStyleBackColor = false;
+            this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click); 
+            // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.ComeBackButton);
             this.Controls.Add(this.ResetPasswordLabelLink);
             this.Controls.Add(this.FormName);
             this.Controls.Add(this.SignInButton);
@@ -154,5 +168,6 @@
         private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.Label FormName;
         private System.Windows.Forms.LinkLabel ResetPasswordLabelLink;
+        private System.Windows.Forms.Button ComeBackButton;
     }
 }

@@ -34,6 +34,7 @@
             this.LoginField = new System.Windows.Forms.TextBox();
             this.NewPasswordLabel = new System.Windows.Forms.Label();
             this.NewPasswordField = new System.Windows.Forms.TextBox();
+            this.ComeBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FormName
@@ -104,12 +105,25 @@
             this.NewPasswordField.TabIndex = 12;
             this.NewPasswordField.TextChanged += new System.EventHandler(this.NewPasswordField_TextChanged);
             // 
+            // ComeBackButton
+            // 
+            this.ComeBackButton.BackColor = System.Drawing.Color.White;
+            this.ComeBackButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComeBackButton.Location = new System.Drawing.Point(115, 369);
+            this.ComeBackButton.Name = "ComeBackButton";
+            this.ComeBackButton.Size = new System.Drawing.Size(231, 32);
+            this.ComeBackButton.TabIndex = 14;
+            this.ComeBackButton.Text = "Come Back";
+            this.ComeBackButton.UseVisualStyleBackColor = false;
+            this.ComeBackButton.Click += new System.EventHandler(ComeBackButton_Click);
+            // 
             // PasswordRecovery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.ComeBackButton);
             this.Controls.Add(this.NewPasswordLabel);
             this.Controls.Add(this.NewPasswordField);
             this.Controls.Add(this.ChangePasswordButton);
@@ -118,7 +132,7 @@
             this.Controls.Add(this.FormName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PasswordRecovery";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Password Recovery";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -133,5 +147,6 @@
         private System.Windows.Forms.TextBox LoginField;
         private System.Windows.Forms.Label NewPasswordLabel;
         private System.Windows.Forms.TextBox NewPasswordField;
+        private System.Windows.Forms.Button ComeBackButton;
     }
 }

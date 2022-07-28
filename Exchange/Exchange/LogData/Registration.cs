@@ -42,13 +42,27 @@
                 }
 
                 Authorization authorization = new Authorization();
-                authorization.Show();
                 this.Hide();
+                authorization.StartPosition = FormStartPosition.Manual;
+                authorization.Location = this.Location;
+                authorization.Size = this.Size;
+                authorization.Show();
             }
             else
             {
                 MessageBox.Show("ERROR! Pls try again!");
             }
+        }
+
+        private void ComeBackButton_Click(object sender, EventArgs e)
+        {
+            MainSelectionMenu mainSelectionMenu = new MainSelectionMenu();
+            this.Hide();
+            mainSelectionMenu.StartPosition = FormStartPosition.Manual;
+            mainSelectionMenu.Location = this.Location;
+            mainSelectionMenu.Size = this.Size;
+            mainSelectionMenu.Show();
+
         }
 
         private void Registration_Load(object sender, EventArgs e)
