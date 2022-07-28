@@ -137,6 +137,7 @@
             this.Controls.Add(this.LoginField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Authorization";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Authorization";
             this.Load += new System.EventHandler(this.Authorization_Load);
             this.ResumeLayout(false);

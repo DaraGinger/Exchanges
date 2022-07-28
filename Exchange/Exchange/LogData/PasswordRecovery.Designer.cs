@@ -118,6 +118,7 @@
             this.Controls.Add(this.FormName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PasswordRecovery";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Password Recovery";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -39,3 +39,4 @@ D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreC
 D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.exe
 D:\Downloads\Даша\Exchange\Exchange\Exchange\obj\Debug\Exchange.pdb
 >>>>>>> 922df3fb366546a4763d3e232433c702ffb0b24f
+C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Buy.resources
