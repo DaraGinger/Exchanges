@@ -77,7 +77,7 @@
             // 
             this.LoginField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginField.Location = new System.Drawing.Point(115, 159);
-            this.LoginField.Multiline = true;
+            this.LoginField.Multiline = false;
             this.LoginField.Name = "LoginField";
             this.LoginField.Size = new System.Drawing.Size(231, 32);
             this.LoginField.TabIndex = 7;
@@ -99,7 +99,7 @@
             // 
             this.NewPasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NewPasswordField.Location = new System.Drawing.Point(115, 229);
-            this.NewPasswordField.Multiline = true;
+            this.NewPasswordField.Multiline = false;
             this.NewPasswordField.Name = "NewPasswordField";
             this.NewPasswordField.Size = new System.Drawing.Size(231, 32);
             this.NewPasswordField.TabIndex = 12;

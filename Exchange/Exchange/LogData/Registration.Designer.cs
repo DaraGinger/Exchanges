@@ -78,7 +78,7 @@
             // 
             this.PasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PasswordField.Location = new System.Drawing.Point(115, 229);
-            this.PasswordField.Multiline = true;
+            this.PasswordField.Multiline = false;
             this.PasswordField.Name = "PasswordField";
             this.PasswordField.Size = new System.Drawing.Size(231, 32);
             this.PasswordField.TabIndex = 6;
@@ -88,7 +88,7 @@
             // 
             this.LoginField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginField.Location = new System.Drawing.Point(115, 159);
-            this.LoginField.Multiline = true;
+            this.LoginField.Multiline = false;
             this.LoginField.Name = "LoginField";
             this.LoginField.Size = new System.Drawing.Size(231, 32);
             this.LoginField.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             this.RepeatPasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RepeatPasswordField.Location = new System.Drawing.Point(115, 302);
-            this.RepeatPasswordField.Multiline = true;
+            this.RepeatPasswordField.Multiline = false;
             this.RepeatPasswordField.Name = "RepeatPasswordField";
             this.RepeatPasswordField.Size = new System.Drawing.Size(231, 32);
             this.RepeatPasswordField.TabIndex = 10;

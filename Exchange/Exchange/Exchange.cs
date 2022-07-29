@@ -3,6 +3,7 @@
     using System;
     using System.Windows.Forms;
     using System.IO;
+using global::Exchange.LogData;
 
     public partial class Exchange : Form
     {
@@ -15,11 +16,12 @@
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             updateForm = new Update();
-            updateForm.Show();
-            
+            updateForm.StartPosition = FormStartPosition.Manual;
+            updateForm.Location = this.Location;
+            updateForm.Size = this.Size;
+            updateForm.Show();          
             updateForm.Owner = this;
-            this.Hide(); 
-            
+            this.Hide();         
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
@@ -87,9 +89,11 @@
         private void BuyingButton_Click(object sender, EventArgs e)
         {
             Buy buyPage = new Buy();
-            buyPage.Show();
-
             this.Hide();
+            buyPage.StartPosition = FormStartPosition.Manual;
+            buyPage.Location = this.Location;
+            buyPage.Size = this.Size;
+            buyPage.Show();
 
         }
     }
