@@ -6,8 +6,7 @@
 
     public partial class PasswordRecovery : Form
     {
-        private string path = Path.GetFullPath(
-            @"C:\Users\Admin\source\repos\Exchanges\Exchange\Exchange\LogData\Logs\MyLogs.txt");
+        private string path = Application.StartupPath + @"\Logs\MyLogs.txt";
 
         public PasswordRecovery()
         {
