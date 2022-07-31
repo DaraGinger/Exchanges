@@ -48,28 +48,32 @@
             this.PlnFlagPicture = new System.Windows.Forms.PictureBox();
             this.EurFlagPicture = new System.Windows.Forms.PictureBox();
             this.UsdFlagPicture = new System.Windows.Forms.PictureBox();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ExchangePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlnFlagPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurFlagPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsdFlagPicture)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ExchangePanel
             // 
             this.ExchangePanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ExchangePanel.Controls.Add(this.ExchangeLabel);
-            this.ExchangePanel.Location = new System.Drawing.Point(-5, 24);
+            this.ExchangePanel.Location = new System.Drawing.Point(0, 52);
             this.ExchangePanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ExchangePanel.Name = "ExchangePanel";
-            this.ExchangePanel.Size = new System.Drawing.Size(546, 52);
+            this.ExchangePanel.Size = new System.Drawing.Size(478, 52);
             this.ExchangePanel.TabIndex = 0;
             // 
             // ExchangeLabel
             // 
             this.ExchangeLabel.AutoSize = true;
+            this.ExchangeLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ExchangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExchangeLabel.ForeColor = System.Drawing.Color.Gold;
-            this.ExchangeLabel.Location = new System.Drawing.Point(136, 0);
+            this.ExchangeLabel.Location = new System.Drawing.Point(78, 0);
             this.ExchangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExchangeLabel.Name = "ExchangeLabel";
             this.ExchangeLabel.Size = new System.Drawing.Size(307, 46);
@@ -80,7 +84,7 @@
             // 
             this.BuyLabel.AutoSize = true;
             this.BuyLabel.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BuyLabel.Location = new System.Drawing.Point(57, 107);
+            this.BuyLabel.Location = new System.Drawing.Point(31, 126);
             this.BuyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BuyLabel.Name = "BuyLabel";
             this.BuyLabel.Size = new System.Drawing.Size(82, 42);
@@ -91,7 +95,7 @@
             // 
             this.UsdLabel.AutoSize = true;
             this.UsdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdLabel.Location = new System.Drawing.Point(230, 166);
+            this.UsdLabel.Location = new System.Drawing.Point(211, 179);
             this.UsdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UsdLabel.Name = "UsdLabel";
             this.UsdLabel.Size = new System.Drawing.Size(66, 29);
@@ -103,7 +107,7 @@
             // 
             this.SellLabel.AutoSize = true;
             this.SellLabel.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SellLabel.Location = new System.Drawing.Point(381, 107);
+            this.SellLabel.Location = new System.Drawing.Point(359, 126);
             this.SellLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SellLabel.Name = "SellLabel";
             this.SellLabel.Size = new System.Drawing.Size(75, 42);
@@ -114,7 +118,7 @@
             // 
             this.EurLabel.AutoSize = true;
             this.EurLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurLabel.Location = new System.Drawing.Point(229, 260);
+            this.EurLabel.Location = new System.Drawing.Point(211, 276);
             this.EurLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EurLabel.Name = "EurLabel";
             this.EurLabel.Size = new System.Drawing.Size(66, 29);
@@ -125,7 +129,7 @@
             // 
             this.PlnLabel.AutoSize = true;
             this.PlnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnLabel.Location = new System.Drawing.Point(230, 358);
+            this.PlnLabel.Location = new System.Drawing.Point(214, 370);
             this.PlnLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PlnLabel.Name = "PlnLabel";
             this.PlnLabel.Size = new System.Drawing.Size(63, 29);
@@ -140,7 +144,7 @@
             this.UpdasteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdasteButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UpdasteButton.ForeColor = System.Drawing.Color.Gold;
-            this.UpdasteButton.Location = new System.Drawing.Point(206, 448);
+            this.UpdasteButton.Location = new System.Drawing.Point(182, 465);
             this.UpdasteButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.UpdasteButton.Name = "UpdasteButton";
             this.UpdasteButton.Size = new System.Drawing.Size(117, 31);
@@ -155,7 +159,7 @@
             this.BuyingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuyingButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BuyingButton.ForeColor = System.Drawing.Color.Gold;
-            this.BuyingButton.Location = new System.Drawing.Point(38, 468);
+            this.BuyingButton.Location = new System.Drawing.Point(13, 488);
             this.BuyingButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BuyingButton.Name = "BuyingButton";
             this.BuyingButton.Size = new System.Drawing.Size(117, 31);
@@ -170,7 +174,7 @@
             this.SellButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SellButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SellButton.ForeColor = System.Drawing.Color.Gold;
-            this.SellButton.Location = new System.Drawing.Point(366, 469);
+            this.SellButton.Location = new System.Drawing.Point(348, 488);
             this.SellButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SellButton.Name = "SellButton";
             this.SellButton.Size = new System.Drawing.Size(117, 30);
@@ -183,7 +187,7 @@
             // 
             this.UsdBuyLabel.AutoSize = true;
             this.UsdBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdBuyLabel.Location = new System.Drawing.Point(59, 182);
+            this.UsdBuyLabel.Location = new System.Drawing.Point(32, 194);
             this.UsdBuyLabel.Name = "UsdBuyLabel";
             this.UsdBuyLabel.Size = new System.Drawing.Size(87, 31);
             this.UsdBuyLabel.TabIndex = 26;
@@ -193,7 +197,7 @@
             // 
             this.EurBuyLabel.AutoSize = true;
             this.EurBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurBuyLabel.Location = new System.Drawing.Point(59, 278);
+            this.EurBuyLabel.Location = new System.Drawing.Point(32, 298);
             this.EurBuyLabel.Name = "EurBuyLabel";
             this.EurBuyLabel.Size = new System.Drawing.Size(87, 31);
             this.EurBuyLabel.TabIndex = 27;
@@ -203,7 +207,7 @@
             // 
             this.PlnBuyLabel.AutoSize = true;
             this.PlnBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnBuyLabel.Location = new System.Drawing.Point(59, 398);
+            this.PlnBuyLabel.Location = new System.Drawing.Point(32, 391);
             this.PlnBuyLabel.Name = "PlnBuyLabel";
             this.PlnBuyLabel.Size = new System.Drawing.Size(87, 31);
             this.PlnBuyLabel.TabIndex = 28;
@@ -213,7 +217,7 @@
             // 
             this.UsdSellLabel.AutoSize = true;
             this.UsdSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdSellLabel.Location = new System.Drawing.Point(382, 182);
+            this.UsdSellLabel.Location = new System.Drawing.Point(362, 194);
             this.UsdSellLabel.Name = "UsdSellLabel";
             this.UsdSellLabel.Size = new System.Drawing.Size(87, 31);
             this.UsdSellLabel.TabIndex = 29;
@@ -223,7 +227,7 @@
             // 
             this.EurSellLabel.AutoSize = true;
             this.EurSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurSellLabel.Location = new System.Drawing.Point(382, 278);
+            this.EurSellLabel.Location = new System.Drawing.Point(360, 298);
             this.EurSellLabel.Name = "EurSellLabel";
             this.EurSellLabel.Size = new System.Drawing.Size(87, 31);
             this.EurSellLabel.TabIndex = 30;
@@ -233,7 +237,7 @@
             // 
             this.PlnSellLabel.AutoSize = true;
             this.PlnSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnSellLabel.Location = new System.Drawing.Point(382, 398);
+            this.PlnSellLabel.Location = new System.Drawing.Point(360, 391);
             this.PlnSellLabel.Name = "PlnSellLabel";
             this.PlnSellLabel.Size = new System.Drawing.Size(87, 31);
             this.PlnSellLabel.TabIndex = 32;
@@ -245,7 +249,7 @@
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SaveButton.ForeColor = System.Drawing.Color.Gold;
-            this.SaveButton.Location = new System.Drawing.Point(206, 490);
+            this.SaveButton.Location = new System.Drawing.Point(182, 512);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(117, 31);
             this.SaveButton.TabIndex = 33;
@@ -256,7 +260,7 @@
             // PlnFlagPicture
             // 
             this.PlnFlagPicture.Image = global::Exchange.Properties.Resources.plnFlag;
-            this.PlnFlagPicture.Location = new System.Drawing.Point(223, 389);
+            this.PlnFlagPicture.Location = new System.Drawing.Point(204, 402);
             this.PlnFlagPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PlnFlagPicture.Name = "PlnFlagPicture";
             this.PlnFlagPicture.Size = new System.Drawing.Size(83, 40);
@@ -267,7 +271,7 @@
             // EurFlagPicture
             // 
             this.EurFlagPicture.Image = global::Exchange.Properties.Resources.eurFlag;
-            this.EurFlagPicture.Location = new System.Drawing.Point(223, 291);
+            this.EurFlagPicture.Location = new System.Drawing.Point(204, 308);
             this.EurFlagPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.EurFlagPicture.Name = "EurFlagPicture";
             this.EurFlagPicture.Size = new System.Drawing.Size(83, 40);
@@ -278,7 +282,7 @@
             // UsdFlagPicture
             // 
             this.UsdFlagPicture.Image = global::Exchange.Properties.Resources.usdFlag;
-            this.UsdFlagPicture.Location = new System.Drawing.Point(223, 197);
+            this.UsdFlagPicture.Location = new System.Drawing.Point(204, 211);
             this.UsdFlagPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.UsdFlagPicture.Name = "UsdFlagPicture";
             this.UsdFlagPicture.Size = new System.Drawing.Size(83, 40);
@@ -286,12 +290,36 @@
             this.UsdFlagPicture.TabIndex = 6;
             this.UsdFlagPicture.TabStop = false;
             // 
-            // Exchange
+            // ExitButton
+            // 
+            this.ExitButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ExitButton.BackColor = System.Drawing.Color.Crimson;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.Location = new System.Drawing.Point(455, 0);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(22, 22);
+            this.ExitButton.TabIndex = 34;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel1.Controls.Add(this.ExitButton);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(478, 22);
+            this.panel1.TabIndex = 35;
+            // 
+            // ExchangeMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(539, 533);
+            this.ClientSize = new System.Drawing.Size(478, 546);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.PlnSellLabel);
             this.Controls.Add(this.EurSellLabel);
@@ -312,9 +340,9 @@
             this.Controls.Add(this.BuyLabel);
             this.Controls.Add(this.ExchangePanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "Exchange";
+            this.Name = "ExchangeMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exchange";
             this.ExchangePanel.ResumeLayout(false);
@@ -322,6 +350,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PlnFlagPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurFlagPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsdFlagPicture)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,5 +378,7 @@
         public System.Windows.Forms.Label EurSellLabel;
         public System.Windows.Forms.Label PlnSellLabel;
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Panel panel1;
     }
 }

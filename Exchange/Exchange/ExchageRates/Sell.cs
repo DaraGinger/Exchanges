@@ -186,5 +186,10 @@
             exchange.Show();
             this.Hide();
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

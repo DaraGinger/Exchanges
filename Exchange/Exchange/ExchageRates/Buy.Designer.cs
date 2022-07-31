@@ -49,6 +49,7 @@
             this.CalculateEurButton = new System.Windows.Forms.Button();
             this.CalculatePlnButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.BuyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).BeginInit();
@@ -270,12 +271,23 @@
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(457, -1);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(22, 22);
+            this.ExitButton.TabIndex = 21;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // Buy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(462, 533);
+            this.ClientSize = new System.Drawing.Size(478, 546);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.CalculatePlnButton);
             this.Controls.Add(this.CalculateEurButton);
@@ -296,6 +308,7 @@
             this.Controls.Add(this.UsdText);
             this.Controls.Add(this.UahUsdLabel);
             this.Controls.Add(this.BuyPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(-4, 24);
             this.Name = "Buy";
             this.Text = "Calculate";
@@ -332,5 +345,6 @@
         private System.Windows.Forms.Button CalculateEurButton;
         private System.Windows.Forms.Button CalculatePlnButton;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }

@@ -64,11 +64,6 @@
 
         }
 
-        private void Registration_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoginField_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;

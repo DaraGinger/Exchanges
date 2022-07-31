@@ -47,11 +47,16 @@
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            File.Create(@"E:\Downloads\\Kourse.txt").Close();
-            File.WriteAllText(@"E:\Downloads\\Kourse.txt", $"Buy \t    \t Sell \t \t \t \t \t \t \t \t \t \t \t \t \t" +
+            File.Create(@"\SaveKourse\\Kourse.txt").Close();
+            File.WriteAllText(@"\SaveKourse\\Kourse.txt", $"Buy \t    \t Sell \t \t \t \t \t \t \t \t \t \t \t \t \t" +
                                                            $"{UsdBuyLabel.Text} \t {UsdLabel.Text} \t {UsdSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
                                                            $"{EurBuyLabel.Text} \t {EurLabel.Text} \t {EurSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
                                                            $"{PlnBuyLabel.Text} \t {PlnLabel.Text} \t {PlnSellLabel.Text} ");
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

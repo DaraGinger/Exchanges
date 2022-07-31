@@ -49,6 +49,7 @@
             this.PlnPicture = new System.Windows.Forms.PictureBox();
             this.SellingPanel = new System.Windows.Forms.Panel();
             this.SellingLabel = new System.Windows.Forms.Label();
+            this.ExitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlnPicture)).BeginInit();
@@ -265,7 +266,7 @@
             this.SellingPanel.Controls.Add(this.SellingLabel);
             this.SellingPanel.Location = new System.Drawing.Point(-4, 24);
             this.SellingPanel.Name = "SellingPanel";
-            this.SellingPanel.Size = new System.Drawing.Size(468, 52);
+            this.SellingPanel.Size = new System.Drawing.Size(483, 52);
             this.SellingPanel.TabIndex = 0;
             // 
             // SellingLabel
@@ -280,12 +281,23 @@
             this.SellingLabel.TabIndex = 0;
             this.SellingLabel.Text = "Selling";
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(457, -1);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(22, 22);
+            this.ExitButton.TabIndex = 22;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // Sell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(462, 539);
+            this.ClientSize = new System.Drawing.Size(478, 546);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SellingPanel);
             this.Controls.Add(this.PlnPicture);
             this.Controls.Add(this.EurPicture);
@@ -306,6 +318,7 @@
             this.Controls.Add(this.UsdText);
             this.Controls.Add(this.UahUsdLabel);
             this.Controls.Add(this.UsdLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sell";
             this.Text = "Selling";
             ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).EndInit();
@@ -341,5 +354,6 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Panel SellingPanel;
         private System.Windows.Forms.Label SellingLabel;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
