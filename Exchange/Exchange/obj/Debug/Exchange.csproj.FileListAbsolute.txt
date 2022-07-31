@@ -4,7 +4,6 @@ C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\bin\Debug\Exchang
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.AssemblyReference.cache
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.SuggestedBindingRedirects.cache
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Buy.resources
-C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Exchange.resources
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.Sell.resources
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.LogData.Authorization.resources
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.LogData.MainSelectionMenu.resources
@@ -16,3 +15,4 @@ C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchang
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.csproj.CoreCompileInputs.cache
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.exe
 C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.pdb
+C:\Users\Дарина\Source\Repos\Exchanges\Exchange\Exchange\obj\Debug\Exchange.ExchangeMainPage.resources

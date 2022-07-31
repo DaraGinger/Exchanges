@@ -1,6 +1,6 @@
 ﻿namespace Exchange
 {
-    partial class Exchange
+    partial class ExchangeMainPage
     {
         /// <summary>
         /// Required designer variable.

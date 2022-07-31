@@ -58,6 +58,7 @@
     <Compile Include="ExchageRates\Exchange.Designer.cs">
       <DependentUpon>Exchange.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExchageRates\enterText.cs" />
     <Compile Include="ExchageRates\Sell.cs">
       <SubType>Form</SubType>
     </Compile>

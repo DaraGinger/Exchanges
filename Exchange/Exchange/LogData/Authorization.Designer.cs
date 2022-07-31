@@ -42,21 +42,21 @@
             // 
             this.LoginField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginField.Location = new System.Drawing.Point(115, 159);
-            this.LoginField.Multiline = false;
             this.LoginField.Name = "LoginField";
-            this.LoginField.Size = new System.Drawing.Size(231, 32);
+            this.LoginField.Size = new System.Drawing.Size(231, 29);
             this.LoginField.TabIndex = 0;
             this.LoginField.TextChanged += new System.EventHandler(this.LoginField_TextChanged);
+            this.LoginField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginField_KeyPress);
             // 
             // PasswordField
             // 
             this.PasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PasswordField.Location = new System.Drawing.Point(115, 229);
-            this.PasswordField.Multiline = false;
             this.PasswordField.Name = "PasswordField";
-            this.PasswordField.Size = new System.Drawing.Size(231, 32);
+            this.PasswordField.Size = new System.Drawing.Size(231, 29);
             this.PasswordField.TabIndex = 1;
             this.PasswordField.TextChanged += new System.EventHandler(this.PasswordField_TextChanged);
+            this.PasswordField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordField_KeyPress);
             // 
             // LoginLabel
             // 
@@ -133,7 +133,7 @@
             this.ComeBackButton.TabIndex = 7;
             this.ComeBackButton.Text = "Come Back";
             this.ComeBackButton.UseVisualStyleBackColor = false;
-            this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click); 
+            this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click);
             // 
             // Authorization
             // 

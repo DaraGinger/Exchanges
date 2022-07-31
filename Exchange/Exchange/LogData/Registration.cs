@@ -69,5 +69,49 @@
 
         }
 
+        private void LoginField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            Key.EnterText(key);
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    PasswordField.Focus();
+                }
+            }
+        }
+
+        private void PasswordField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            Key.EnterText(key);
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    RepeatPasswordField.Focus();
+                }
+            }
+        }
+
+        private void RepeatPasswordField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            Key.EnterText(key);
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    SignUpButton.Focus();
+                }
+            }
+        }
     }
 }

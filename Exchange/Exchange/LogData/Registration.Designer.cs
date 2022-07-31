@@ -78,21 +78,21 @@
             // 
             this.PasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PasswordField.Location = new System.Drawing.Point(115, 229);
-            this.PasswordField.Multiline = false;
             this.PasswordField.Name = "PasswordField";
-            this.PasswordField.Size = new System.Drawing.Size(231, 32);
+            this.PasswordField.Size = new System.Drawing.Size(231, 29);
             this.PasswordField.TabIndex = 6;
             this.PasswordField.TextChanged += new System.EventHandler(this.PasswordField_TextChanged);
+            this.PasswordField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordField_KeyPress);
             // 
             // LoginField
             // 
             this.LoginField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginField.Location = new System.Drawing.Point(115, 159);
-            this.LoginField.Multiline = false;
             this.LoginField.Name = "LoginField";
-            this.LoginField.Size = new System.Drawing.Size(231, 32);
+            this.LoginField.Size = new System.Drawing.Size(231, 29);
             this.LoginField.TabIndex = 5;
             this.LoginField.TextChanged += new System.EventHandler(this.LoginField_TextChanged);
+            this.LoginField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginField_KeyPress);
             // 
             // RepeatPasswordLabel
             // 
@@ -110,11 +110,11 @@
             // 
             this.RepeatPasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RepeatPasswordField.Location = new System.Drawing.Point(115, 302);
-            this.RepeatPasswordField.Multiline = false;
             this.RepeatPasswordField.Name = "RepeatPasswordField";
-            this.RepeatPasswordField.Size = new System.Drawing.Size(231, 32);
+            this.RepeatPasswordField.Size = new System.Drawing.Size(231, 29);
             this.RepeatPasswordField.TabIndex = 10;
             this.RepeatPasswordField.TextChanged += new System.EventHandler(this.RepeatPasswordField_Click);
+            this.RepeatPasswordField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RepeatPasswordField_KeyPress);
             // 
             // FormName
             // 

@@ -3,12 +3,11 @@
     using System;
     using System.Windows.Forms;
     using System.IO;
-using global::Exchange.LogData;
 
-    public partial class Exchange : Form
+    public partial class ExchangeMainPage : Form
     {
         Update updateForm;
-        public Exchange()
+        public ExchangeMainPage()
         {
             InitializeComponent();
         }

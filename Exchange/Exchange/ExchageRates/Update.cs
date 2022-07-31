@@ -10,18 +10,18 @@
             InitializeComponent();
         }
 
+        ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[2];
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            Exchange exchangePage = (Exchange)Application.OpenForms[0];
-            exchangePage.Show();
+            exchange.Show();
             this.Hide();
             Validation();
         }
 
         private void Validation()
         {
-            Exchange exchange = (Exchange)Application.OpenForms[0];
+
             if (UsdBuyText.Text.Length == 0)
             {
 
@@ -85,10 +85,8 @@
         private void UsdBuyText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            Key kayText = new Key();
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -102,10 +100,8 @@
         private void UsdSellText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            Key kayText = new Key();
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -119,10 +115,8 @@
         private void EurBuyText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            Key kayText = new Key();
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -136,10 +130,8 @@
         private void EurSellText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            Key kayText = new Key();
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -153,10 +145,8 @@
         private void PlnBuyText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            Key kayText = new Key();
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -170,10 +160,8 @@
         private void PlnSellText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            Key kayText = new Key();
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -183,5 +171,7 @@
                 }
             }
         }
+
+        
     }
 }

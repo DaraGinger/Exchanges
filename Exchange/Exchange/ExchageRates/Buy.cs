@@ -10,14 +10,15 @@
             InitializeComponent();
         }
 
-        Exchange exchange = (Exchange)Application.OpenForms[0];
-        Update update = new Update();
+        ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[2];
+       
         private void CalculateUsdButton_Click(object sender, EventArgs e)
         {
+            double kourseUsd;
 
             if (UsdText.Text.Length == 0)
             {
-                double kourseUsd = Convert.ToDouble(update.UsdBuyText.Text);
+                kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
 
                 double uah = Convert.ToDouble(UahUsdText.Text);
 
@@ -27,7 +28,7 @@
             }
             else
             {
-                double kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
+                kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
 
                 double usd = Convert.ToDouble(UsdText.Text);
 
@@ -91,18 +92,15 @@
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            Exchange exchangePage = (Exchange)Application.OpenForms[0];
-            exchangePage.Show();
+            exchange.Show();
             this.Hide();
         }
 
         private void UsdText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -116,10 +114,9 @@
         private void UahUsdText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            
+            Key.EnterText(key);
+            
 
             if (Char.IsControl(validate))
             {
@@ -133,10 +130,8 @@
         private void EurText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+           
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -150,10 +145,8 @@
         private void UahEurText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -167,10 +160,8 @@
         private void PlnText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+           
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
@@ -184,10 +175,8 @@
         private void UahPlnText_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-            if (!Char.IsDigit(validate) && validate != 44)
-            {
-                key.Handled = true;
-            }
+            
+            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {
