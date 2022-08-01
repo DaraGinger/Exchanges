@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buy));
             this.BuyPanel = new System.Windows.Forms.Panel();
             this.BuyingLabel = new System.Windows.Forms.Label();
             this.UahUsdLabel = new System.Windows.Forms.Label();
@@ -309,6 +310,7 @@
             this.Controls.Add(this.UahUsdLabel);
             this.Controls.Add(this.BuyPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(-4, 24);
             this.Name = "Buy";
             this.Text = "Calculate";

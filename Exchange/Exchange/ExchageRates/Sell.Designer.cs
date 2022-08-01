@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sell));
             this.UsdLabel = new System.Windows.Forms.Label();
             this.UahUsdLabel = new System.Windows.Forms.Label();
             this.UsdText = new System.Windows.Forms.TextBox();
@@ -59,26 +60,26 @@
             // UsdLabel
             // 
             this.UsdLabel.AutoSize = true;
-            this.UsdLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsdLabel.Location = new System.Drawing.Point(80, 99);
             this.UsdLabel.Name = "UsdLabel";
-            this.UsdLabel.Size = new System.Drawing.Size(91, 32);
+            this.UsdLabel.Size = new System.Drawing.Size(92, 31);
             this.UsdLabel.TabIndex = 5;
             this.UsdLabel.Text = "USD :";
             // 
             // UahUsdLabel
             // 
             this.UahUsdLabel.AutoSize = true;
-            this.UahUsdLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahUsdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahUsdLabel.Location = new System.Drawing.Point(78, 160);
             this.UahUsdLabel.Name = "UahUsdLabel";
-            this.UahUsdLabel.Size = new System.Drawing.Size(93, 32);
+            this.UahUsdLabel.Size = new System.Drawing.Size(92, 31);
             this.UahUsdLabel.TabIndex = 2;
             this.UahUsdLabel.Text = "UAH :";
             // 
             // UsdText
             // 
-            this.UsdText.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsdText.Location = new System.Drawing.Point(195, 103);
             this.UsdText.Name = "UsdText";
             this.UsdText.Size = new System.Drawing.Size(146, 26);
@@ -87,7 +88,7 @@
             // 
             // UahUsdText
             // 
-            this.UahUsdText.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahUsdText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahUsdText.Location = new System.Drawing.Point(195, 176);
             this.UahUsdText.Name = "UahUsdText";
             this.UahUsdText.Size = new System.Drawing.Size(146, 26);
@@ -99,7 +100,7 @@
             this.CalculateUsdButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculateUsdButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculateUsdButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateUsdButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculateUsdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateUsdButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculateUsdButton.Location = new System.Drawing.Point(351, 132);
             this.CalculateUsdButton.Name = "CalculateUsdButton";
@@ -112,46 +113,46 @@
             // EurLabel
             // 
             this.EurLabel.AutoSize = true;
-            this.EurLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EurLabel.Location = new System.Drawing.Point(80, 247);
             this.EurLabel.Name = "EurLabel";
-            this.EurLabel.Size = new System.Drawing.Size(92, 32);
+            this.EurLabel.Size = new System.Drawing.Size(92, 31);
             this.EurLabel.TabIndex = 10;
             this.EurLabel.Text = "EUR :";
             // 
             // UahEurLabel
             // 
             this.UahEurLabel.AutoSize = true;
-            this.UahEurLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahEurLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahEurLabel.Location = new System.Drawing.Point(75, 313);
             this.UahEurLabel.Name = "UahEurLabel";
-            this.UahEurLabel.Size = new System.Drawing.Size(93, 32);
+            this.UahEurLabel.Size = new System.Drawing.Size(92, 31);
             this.UahEurLabel.TabIndex = 7;
             this.UahEurLabel.Text = "UAH :";
             // 
             // PlnLabel
             // 
             this.PlnLabel.AutoSize = true;
-            this.PlnLabel.Font = new System.Drawing.Font("Bookman Old Style", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnLabel.Location = new System.Drawing.Point(80, 391);
             this.PlnLabel.Name = "PlnLabel";
-            this.PlnLabel.Size = new System.Drawing.Size(87, 32);
+            this.PlnLabel.Size = new System.Drawing.Size(87, 31);
             this.PlnLabel.TabIndex = 15;
             this.PlnLabel.Text = "PLN :";
             // 
             // UahPlnLabel
             // 
             this.UahPlnLabel.AutoSize = true;
-            this.UahPlnLabel.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahPlnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahPlnLabel.Location = new System.Drawing.Point(75, 457);
             this.UahPlnLabel.Name = "UahPlnLabel";
-            this.UahPlnLabel.Size = new System.Drawing.Size(93, 32);
+            this.UahPlnLabel.Size = new System.Drawing.Size(92, 31);
             this.UahPlnLabel.TabIndex = 12;
             this.UahPlnLabel.Text = "UAH :";
             // 
             // EurText
             // 
-            this.EurText.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EurText.Location = new System.Drawing.Point(195, 251);
             this.EurText.Name = "EurText";
             this.EurText.Size = new System.Drawing.Size(146, 26);
@@ -160,7 +161,7 @@
             // 
             // UahEurText
             // 
-            this.UahEurText.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahEurText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahEurText.Location = new System.Drawing.Point(195, 324);
             this.UahEurText.Name = "UahEurText";
             this.UahEurText.Size = new System.Drawing.Size(146, 26);
@@ -169,7 +170,7 @@
             // 
             // PlnText
             // 
-            this.PlnText.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnText.Location = new System.Drawing.Point(195, 395);
             this.PlnText.Name = "PlnText";
             this.PlnText.Size = new System.Drawing.Size(146, 26);
@@ -178,7 +179,7 @@
             // 
             // UahPlnText
             // 
-            this.UahPlnText.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahPlnText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahPlnText.Location = new System.Drawing.Point(195, 468);
             this.UahPlnText.Name = "UahPlnText";
             this.UahPlnText.Size = new System.Drawing.Size(146, 26);
@@ -190,7 +191,7 @@
             this.CalculateEurButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculateEurButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculateEurButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateEurButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculateEurButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateEurButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculateEurButton.Location = new System.Drawing.Point(351, 282);
             this.CalculateEurButton.Name = "CalculateEurButton";
@@ -205,7 +206,7 @@
             this.CalculatePlnButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculatePlnButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculatePlnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatePlnButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculatePlnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculatePlnButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculatePlnButton.Location = new System.Drawing.Point(351, 431);
             this.CalculatePlnButton.Name = "CalculatePlnButton";
@@ -220,7 +221,7 @@
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Bookman Old Style", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BackButton.ForeColor = System.Drawing.Color.Gold;
             this.BackButton.Location = new System.Drawing.Point(351, 499);
             this.BackButton.Name = "BackButton";
@@ -273,11 +274,11 @@
             // 
             this.SellingLabel.AutoSize = true;
             this.SellingLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SellingLabel.Font = new System.Drawing.Font("Bookman Old Style", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SellingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SellingLabel.ForeColor = System.Drawing.Color.Gold;
             this.SellingLabel.Location = new System.Drawing.Point(165, 0);
             this.SellingLabel.Name = "SellingLabel";
-            this.SellingLabel.Size = new System.Drawing.Size(155, 45);
+            this.SellingLabel.Size = new System.Drawing.Size(141, 44);
             this.SellingLabel.TabIndex = 0;
             this.SellingLabel.Text = "Selling";
             // 
@@ -319,6 +320,7 @@
             this.Controls.Add(this.UahUsdLabel);
             this.Controls.Add(this.UsdLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Sell";
             this.Text = "Selling";
             ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).EndInit();

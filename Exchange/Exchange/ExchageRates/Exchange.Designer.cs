@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExchangeMainPage));
             this.ExchangePanel = new System.Windows.Forms.Panel();
             this.ExchangeLabel = new System.Windows.Forms.Label();
             this.BuyLabel = new System.Windows.Forms.Label();
@@ -172,7 +173,7 @@
             // 
             this.SellButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SellButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SellButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SellButton.ForeColor = System.Drawing.Color.Gold;
             this.SellButton.Location = new System.Drawing.Point(348, 488);
             this.SellButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -247,7 +248,7 @@
             // 
             this.SaveButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SaveButton.ForeColor = System.Drawing.Color.Gold;
             this.SaveButton.Location = new System.Drawing.Point(182, 512);
             this.SaveButton.Name = "SaveButton";
@@ -341,6 +342,7 @@
             this.Controls.Add(this.ExchangePanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ExchangeMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
