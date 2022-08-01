@@ -1,21 +1,25 @@
 ﻿namespace Exchange
 {
     using System;
+    using System.Drawing;
     using System.Windows.Forms;
     
     public partial class Update : Form
     {
+        private bool pressingTheLeftMouseButton = false;
+        private Point mouseLocation;
+
         public Update()
         {
             InitializeComponent();
         }
 
-
-
         ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[1];
         private void OkButton_Click(object sender, EventArgs e)
         {
-            
+            exchange.StartPosition = FormStartPosition.Manual;
+            exchange.Location = this.Location;
+            exchange.Size = this.Size;
             exchange.Show();
             this.Hide();
             Validation();
@@ -183,6 +187,38 @@
         private void TurnButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void UpdateLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xMouseLocationOnScreen;
+            int yMouseLocationOnScreen;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xMouseLocationOnScreen = -e.X;
+                yMouseLocationOnScreen = -e.Y;
+                this.mouseLocation = new Point(xMouseLocationOnScreen, yMouseLocationOnScreen);
+                this.pressingTheLeftMouseButton = true;
+            }
+        }
+
+        private void UpdateLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (this.pressingTheLeftMouseButton)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(this.mouseLocation.X, this.mouseLocation.Y);
+                this.Location = mousePos;
+            }
+        }
+
+        private void UpdateLabel_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.pressingTheLeftMouseButton = false;
+            }
         }
     }
 }

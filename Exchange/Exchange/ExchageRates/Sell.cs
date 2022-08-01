@@ -2,9 +2,13 @@
 {
     using System.Windows.Forms;
     using System;
+    using System.Drawing;
 
     public partial class Sell : Form
     {
+        private bool pressingTheLeftMouseButton = false;
+        private Point mouseLocation;
+
         public Sell()
         {
             InitializeComponent();
@@ -184,6 +188,9 @@
         private void BackButton_Click(object sender, EventArgs e)
         {
             exchange.Show();
+            exchange.StartPosition = FormStartPosition.Manual;
+            exchange.Location = this.Location;
+            exchange.Size = this.Size;
             this.Close();
         }
 
@@ -195,6 +202,38 @@
         private void TurnButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void SellingLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xMouseLocationOnScreen;
+            int yMouseLocationOnScreen;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xMouseLocationOnScreen = -e.X;
+                yMouseLocationOnScreen = -e.Y;
+                this.mouseLocation = new Point(xMouseLocationOnScreen, yMouseLocationOnScreen);
+                this.pressingTheLeftMouseButton = true;
+            }
+        }
+
+        private void SellingLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (this.pressingTheLeftMouseButton)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(this.mouseLocation.X, this.mouseLocation.Y);
+                this.Location = mousePos;
+            }
+        }
+
+        private void SellingLabel_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.pressingTheLeftMouseButton = false;
+            }
         }
     }
 }

@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TurnButton = new System.Windows.Forms.Button();
             this.UpdateLabel = new System.Windows.Forms.Label();
+            this.BuyLabel = new System.Windows.Forms.Label();
+            this.SellLabel = new System.Windows.Forms.Label();
             this.UsdLabel = new System.Windows.Forms.Label();
             this.EurLabel = new System.Windows.Forms.Label();
             this.PlnLabel = new System.Windows.Forms.Label();
-            this.BuyLabel = new System.Windows.Forms.Label();
-            this.SellLabel = new System.Windows.Forms.Label();
             this.UsdBuyText = new System.Windows.Forms.TextBox();
             this.EurBuyText = new System.Windows.Forms.TextBox();
             this.PlnBuyText = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.EurFlagPicture = new System.Windows.Forms.PictureBox();
             this.PlnFlagPicture = new System.Windows.Forms.PictureBox();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.TurnButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsdFlagPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurFlagPicture)).BeginInit();
@@ -57,30 +57,74 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.TurnButton);
             this.panel1.Controls.Add(this.UpdateLabel);
-            this.panel1.Location = new System.Drawing.Point(-2, 24);
+            this.panel1.Controls.Add(this.BuyLabel);
+            this.panel1.Controls.Add(this.SellLabel);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 52);
+            this.panel1.Size = new System.Drawing.Size(479, 124);
             this.panel1.TabIndex = 0;
+            // 
+            // TurnButton
+            // 
+            this.TurnButton.BackColor = System.Drawing.Color.Black;
+            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TurnButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TurnButton.ForeColor = System.Drawing.Color.Gold;
+            this.TurnButton.Location = new System.Drawing.Point(454, 25);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(25, 25);
+            this.TurnButton.TabIndex = 17;
+            this.TurnButton.Text = "—";
+            this.TurnButton.UseVisualStyleBackColor = false;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
             // UpdateLabel
             // 
-            this.UpdateLabel.AutoSize = true;
-            this.UpdateLabel.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UpdateLabel.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UpdateLabel.ForeColor = System.Drawing.Color.Gold;
-            this.UpdateLabel.Location = new System.Drawing.Point(166, 0);
+            this.UpdateLabel.Location = new System.Drawing.Point(3, 0);
             this.UpdateLabel.Name = "UpdateLabel";
-            this.UpdateLabel.Size = new System.Drawing.Size(144, 45);
+            this.UpdateLabel.Size = new System.Drawing.Size(476, 45);
             this.UpdateLabel.TabIndex = 1;
             this.UpdateLabel.Text = "Update";
+            this.UpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UpdateLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UpdateLabel_MouseDown);
+            this.UpdateLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UpdateLabel_MouseMove);
+            this.UpdateLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UpdateLabel_MouseUp);
+            // 
+            // BuyLabel
+            // 
+            this.BuyLabel.AutoSize = true;
+            this.BuyLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BuyLabel.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BuyLabel.ForeColor = System.Drawing.Color.Gold;
+            this.BuyLabel.Location = new System.Drawing.Point(20, 73);
+            this.BuyLabel.Name = "BuyLabel";
+            this.BuyLabel.Size = new System.Drawing.Size(84, 51);
+            this.BuyLabel.TabIndex = 1;
+            this.BuyLabel.Text = "Buy";
+            // 
+            // SellLabel
+            // 
+            this.SellLabel.AutoSize = true;
+            this.SellLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SellLabel.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SellLabel.ForeColor = System.Drawing.Color.Gold;
+            this.SellLabel.Location = new System.Drawing.Point(373, 73);
+            this.SellLabel.Name = "SellLabel";
+            this.SellLabel.Size = new System.Drawing.Size(89, 51);
+            this.SellLabel.TabIndex = 3;
+            this.SellLabel.Text = "Sell";
             // 
             // UsdLabel
             // 
             this.UsdLabel.AutoSize = true;
-            this.UsdLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdLabel.Location = new System.Drawing.Point(205, 175);
+            this.UsdLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdLabel.Location = new System.Drawing.Point(211, 126);
             this.UsdLabel.Name = "UsdLabel";
-            this.UsdLabel.Size = new System.Drawing.Size(69, 31);
+            this.UsdLabel.Size = new System.Drawing.Size(67, 35);
             this.UsdLabel.TabIndex = 2;
             this.UsdLabel.Text = "USD";
             this.UsdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,48 +132,28 @@
             // EurLabel
             // 
             this.EurLabel.AutoSize = true;
-            this.EurLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurLabel.Location = new System.Drawing.Point(205, 282);
+            this.EurLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurLabel.Location = new System.Drawing.Point(214, 224);
             this.EurLabel.Name = "EurLabel";
-            this.EurLabel.Size = new System.Drawing.Size(72, 31);
+            this.EurLabel.Size = new System.Drawing.Size(63, 35);
             this.EurLabel.TabIndex = 4;
             this.EurLabel.Text = "EUR";
             // 
             // PlnLabel
             // 
             this.PlnLabel.AutoSize = true;
-            this.PlnLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnLabel.Location = new System.Drawing.Point(208, 390);
+            this.PlnLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnLabel.Location = new System.Drawing.Point(214, 324);
             this.PlnLabel.Name = "PlnLabel";
-            this.PlnLabel.Size = new System.Drawing.Size(69, 31);
+            this.PlnLabel.Size = new System.Drawing.Size(61, 35);
             this.PlnLabel.TabIndex = 5;
             this.PlnLabel.Text = "PLN";
-            // 
-            // BuyLabel
-            // 
-            this.BuyLabel.AutoSize = true;
-            this.BuyLabel.Font = new System.Drawing.Font("Times New Roman", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BuyLabel.Location = new System.Drawing.Point(39, 111);
-            this.BuyLabel.Name = "BuyLabel";
-            this.BuyLabel.Size = new System.Drawing.Size(73, 37);
-            this.BuyLabel.TabIndex = 1;
-            this.BuyLabel.Text = "Buy";
-            // 
-            // SellLabel
-            // 
-            this.SellLabel.AutoSize = true;
-            this.SellLabel.Font = new System.Drawing.Font("Times New Roman", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SellLabel.Location = new System.Drawing.Point(358, 111);
-            this.SellLabel.Name = "SellLabel";
-            this.SellLabel.Size = new System.Drawing.Size(68, 37);
-            this.SellLabel.TabIndex = 3;
-            this.SellLabel.Text = "Sell";
             // 
             // UsdBuyText
             // 
             this.UsdBuyText.BackColor = System.Drawing.SystemColors.Window;
             this.UsdBuyText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdBuyText.Location = new System.Drawing.Point(28, 209);
+            this.UsdBuyText.Location = new System.Drawing.Point(27, 164);
             this.UsdBuyText.Name = "UsdBuyText";
             this.UsdBuyText.Size = new System.Drawing.Size(100, 26);
             this.UsdBuyText.TabIndex = 9;
@@ -138,7 +162,7 @@
             // EurBuyText
             // 
             this.EurBuyText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurBuyText.Location = new System.Drawing.Point(28, 316);
+            this.EurBuyText.Location = new System.Drawing.Point(27, 264);
             this.EurBuyText.Name = "EurBuyText";
             this.EurBuyText.Size = new System.Drawing.Size(100, 26);
             this.EurBuyText.TabIndex = 11;
@@ -147,7 +171,7 @@
             // PlnBuyText
             // 
             this.PlnBuyText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnBuyText.Location = new System.Drawing.Point(28, 433);
+            this.PlnBuyText.Location = new System.Drawing.Point(27, 364);
             this.PlnBuyText.Name = "PlnBuyText";
             this.PlnBuyText.Size = new System.Drawing.Size(100, 26);
             this.PlnBuyText.TabIndex = 13;
@@ -156,7 +180,7 @@
             // UsdSellText
             // 
             this.UsdSellText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdSellText.Location = new System.Drawing.Point(349, 209);
+            this.UsdSellText.Location = new System.Drawing.Point(360, 164);
             this.UsdSellText.Name = "UsdSellText";
             this.UsdSellText.Size = new System.Drawing.Size(100, 26);
             this.UsdSellText.TabIndex = 10;
@@ -165,7 +189,7 @@
             // EurSellText
             // 
             this.EurSellText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurSellText.Location = new System.Drawing.Point(349, 316);
+            this.EurSellText.Location = new System.Drawing.Point(360, 264);
             this.EurSellText.Name = "EurSellText";
             this.EurSellText.Size = new System.Drawing.Size(100, 26);
             this.EurSellText.TabIndex = 12;
@@ -174,7 +198,7 @@
             // PlnSellText
             // 
             this.PlnSellText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnSellText.Location = new System.Drawing.Point(349, 433);
+            this.PlnSellText.Location = new System.Drawing.Point(360, 364);
             this.PlnSellText.Name = "PlnSellText";
             this.PlnSellText.Size = new System.Drawing.Size(100, 26);
             this.PlnSellText.TabIndex = 14;
@@ -185,11 +209,11 @@
             this.OkButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.OkButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OkButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OkButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OkButton.ForeColor = System.Drawing.Color.Gold;
-            this.OkButton.Location = new System.Drawing.Point(191, 502);
+            this.OkButton.Location = new System.Drawing.Point(195, 462);
             this.OkButton.Name = "OkButton";
-            this.OkButton.Size = new System.Drawing.Size(94, 32);
+            this.OkButton.Size = new System.Drawing.Size(100, 40);
             this.OkButton.TabIndex = 16;
             this.OkButton.Text = "Ok";
             this.OkButton.UseVisualStyleBackColor = false;
@@ -197,8 +221,9 @@
             // 
             // UsdFlagPicture
             // 
-            this.UsdFlagPicture.Image = global::Exchange.Properties.Resources.usdFlag;
-            this.UsdFlagPicture.Location = new System.Drawing.Point(194, 209);
+            this.UsdFlagPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsdFlagPicture.Image = global::Exchange.Properties.Resources.NewUsdFlag;
+            this.UsdFlagPicture.Location = new System.Drawing.Point(202, 164);
             this.UsdFlagPicture.Name = "UsdFlagPicture";
             this.UsdFlagPicture.Size = new System.Drawing.Size(83, 49);
             this.UsdFlagPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -207,8 +232,9 @@
             // 
             // EurFlagPicture
             // 
+            this.EurFlagPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EurFlagPicture.Image = global::Exchange.Properties.Resources.eurFlag;
-            this.EurFlagPicture.Location = new System.Drawing.Point(194, 316);
+            this.EurFlagPicture.Location = new System.Drawing.Point(204, 262);
             this.EurFlagPicture.Name = "EurFlagPicture";
             this.EurFlagPicture.Size = new System.Drawing.Size(83, 49);
             this.EurFlagPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -217,8 +243,9 @@
             // 
             // PlnFlagPicture
             // 
-            this.PlnFlagPicture.Image = global::Exchange.Properties.Resources.plnFlag;
-            this.PlnFlagPicture.Location = new System.Drawing.Point(194, 424);
+            this.PlnFlagPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PlnFlagPicture.Image = global::Exchange.Properties.Resources.NewPlnFlag;
+            this.PlnFlagPicture.Location = new System.Drawing.Point(204, 362);
             this.PlnFlagPicture.Name = "PlnFlagPicture";
             this.PlnFlagPicture.Size = new System.Drawing.Size(83, 50);
             this.PlnFlagPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -227,31 +254,18 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.BackColor = System.Drawing.Color.Red;
+            this.ExitButton.BackColor = System.Drawing.Color.Black;
             this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ExitButton.Location = new System.Drawing.Point(453, -1);
+            this.ExitButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.ForeColor = System.Drawing.Color.Gold;
+            this.ExitButton.Location = new System.Drawing.Point(454, 0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(26, 26);
+            this.ExitButton.Size = new System.Drawing.Size(25, 25);
             this.ExitButton.TabIndex = 2;
             this.ExitButton.Text = "X";
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
-            // TurnButton
-            // 
-            this.TurnButton.BackColor = System.Drawing.Color.Snow;
-            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TurnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TurnButton.Location = new System.Drawing.Point(428, -1);
-            this.TurnButton.Name = "TurnButton";
-            this.TurnButton.Size = new System.Drawing.Size(26, 26);
-            this.TurnButton.TabIndex = 17;
-            this.TurnButton.Text = "-";
-            this.TurnButton.UseVisualStyleBackColor = false;
-            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
             // Update
             // 
@@ -259,7 +273,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(478, 546);
-            this.Controls.Add(this.TurnButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.PlnSellText);
@@ -271,8 +284,6 @@
             this.Controls.Add(this.UsdFlagPicture);
             this.Controls.Add(this.EurFlagPicture);
             this.Controls.Add(this.PlnFlagPicture);
-            this.Controls.Add(this.SellLabel);
-            this.Controls.Add(this.BuyLabel);
             this.Controls.Add(this.PlnLabel);
             this.Controls.Add(this.EurLabel);
             this.Controls.Add(this.UsdLabel);

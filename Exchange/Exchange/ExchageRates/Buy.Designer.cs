@@ -31,17 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buy));
             this.BuyPanel = new System.Windows.Forms.Panel();
             this.BuyingLabel = new System.Windows.Forms.Label();
+            this.TurnButton = new System.Windows.Forms.Button();
             this.UahUsdLabel = new System.Windows.Forms.Label();
             this.UsdText = new System.Windows.Forms.TextBox();
             this.UahUsdText = new System.Windows.Forms.TextBox();
             this.UsdBuyingLabel = new System.Windows.Forms.Label();
-            this.UsdPicture = new System.Windows.Forms.PictureBox();
-            this.EurPicture = new System.Windows.Forms.PictureBox();
             this.EurBuyingLabel = new System.Windows.Forms.Label();
             this.UahEurText = new System.Windows.Forms.TextBox();
             this.EurText = new System.Windows.Forms.TextBox();
             this.UahEurLabel = new System.Windows.Forms.Label();
-            this.PlnPicture = new System.Windows.Forms.PictureBox();
             this.PlnBuyingLabel = new System.Windows.Forms.Label();
             this.UahPlnText = new System.Windows.Forms.TextBox();
             this.PlnText = new System.Windows.Forms.TextBox();
@@ -51,41 +49,67 @@
             this.CalculatePlnButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.TurnButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PlnPicture = new System.Windows.Forms.PictureBox();
+            this.EurPicture = new System.Windows.Forms.PictureBox();
+            this.UsdPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.BuyPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlnPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // BuyPanel
             // 
             this.BuyPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BuyPanel.Controls.Add(this.BuyingLabel);
-            this.BuyPanel.Location = new System.Drawing.Point(-4, 24);
+            this.BuyPanel.Controls.Add(this.TurnButton);
+            this.BuyPanel.Location = new System.Drawing.Point(-4, 0);
             this.BuyPanel.Name = "BuyPanel";
-            this.BuyPanel.Size = new System.Drawing.Size(483, 52);
+            this.BuyPanel.Size = new System.Drawing.Size(483, 76);
             this.BuyPanel.TabIndex = 0;
             // 
             // BuyingLabel
             // 
-            this.BuyingLabel.AutoSize = true;
-            this.BuyingLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BuyingLabel.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BuyingLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BuyingLabel.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BuyingLabel.ForeColor = System.Drawing.Color.Gold;
-            this.BuyingLabel.Location = new System.Drawing.Point(165, 0);
+            this.BuyingLabel.Location = new System.Drawing.Point(3, -3);
             this.BuyingLabel.Name = "BuyingLabel";
-            this.BuyingLabel.Size = new System.Drawing.Size(139, 45);
+            this.BuyingLabel.Size = new System.Drawing.Size(449, 52);
             this.BuyingLabel.TabIndex = 0;
             this.BuyingLabel.Text = "Buying";
+            this.BuyingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BuyingLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BuyingLabel_MouseDown);
+            this.BuyingLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BuyingLabel_MouseMove);
+            this.BuyingLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BuyingLabel_MouseUp);
+            // 
+            // TurnButton
+            // 
+            this.TurnButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TurnButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TurnButton.ForeColor = System.Drawing.Color.Gold;
+            this.TurnButton.Location = new System.Drawing.Point(458, 24);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(25, 25);
+            this.TurnButton.TabIndex = 22;
+            this.TurnButton.Text = "—";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
             // UahUsdLabel
             // 
             this.UahUsdLabel.AutoSize = true;
-            this.UahUsdLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UahUsdLabel.Location = new System.Drawing.Point(75, 165);
+            this.UahUsdLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahUsdLabel.Location = new System.Drawing.Point(94, 164);
             this.UahUsdLabel.Name = "UahUsdLabel";
-            this.UahUsdLabel.Size = new System.Drawing.Size(90, 31);
+            this.UahUsdLabel.Size = new System.Drawing.Size(102, 38);
             this.UahUsdLabel.TabIndex = 2;
             this.UahUsdLabel.Text = "UAH :";
             // 
@@ -110,40 +134,20 @@
             // UsdBuyingLabel
             // 
             this.UsdBuyingLabel.AutoSize = true;
-            this.UsdBuyingLabel.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsdBuyingLabel.Location = new System.Drawing.Point(80, 99);
+            this.UsdBuyingLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsdBuyingLabel.Location = new System.Drawing.Point(94, 91);
             this.UsdBuyingLabel.Name = "UsdBuyingLabel";
-            this.UsdBuyingLabel.Size = new System.Drawing.Size(85, 31);
+            this.UsdBuyingLabel.Size = new System.Drawing.Size(99, 38);
             this.UsdBuyingLabel.TabIndex = 5;
             this.UsdBuyingLabel.Text = "USD :";
-            // 
-            // UsdPicture
-            // 
-            this.UsdPicture.Image = global::Exchange.Properties.Resources.usdFlag;
-            this.UsdPicture.Location = new System.Drawing.Point(28, 99);
-            this.UsdPicture.Name = "UsdPicture";
-            this.UsdPicture.Size = new System.Drawing.Size(46, 27);
-            this.UsdPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UsdPicture.TabIndex = 6;
-            this.UsdPicture.TabStop = false;
-            // 
-            // EurPicture
-            // 
-            this.EurPicture.Image = global::Exchange.Properties.Resources.eurFlag;
-            this.EurPicture.Location = new System.Drawing.Point(28, 247);
-            this.EurPicture.Name = "EurPicture";
-            this.EurPicture.Size = new System.Drawing.Size(46, 27);
-            this.EurPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EurPicture.TabIndex = 11;
-            this.EurPicture.TabStop = false;
             // 
             // EurBuyingLabel
             // 
             this.EurBuyingLabel.AutoSize = true;
-            this.EurBuyingLabel.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EurBuyingLabel.Location = new System.Drawing.Point(80, 247);
+            this.EurBuyingLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EurBuyingLabel.Location = new System.Drawing.Point(98, 239);
             this.EurBuyingLabel.Name = "EurBuyingLabel";
-            this.EurBuyingLabel.Size = new System.Drawing.Size(88, 31);
+            this.EurBuyingLabel.Size = new System.Drawing.Size(95, 38);
             this.EurBuyingLabel.TabIndex = 10;
             this.EurBuyingLabel.Text = "EUR :";
             // 
@@ -168,32 +172,23 @@
             // UahEurLabel
             // 
             this.UahEurLabel.AutoSize = true;
-            this.UahEurLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UahEurLabel.Location = new System.Drawing.Point(75, 313);
+            this.UahEurLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahEurLabel.Location = new System.Drawing.Point(94, 312);
             this.UahEurLabel.Name = "UahEurLabel";
-            this.UahEurLabel.Size = new System.Drawing.Size(90, 31);
+            this.UahEurLabel.Size = new System.Drawing.Size(102, 38);
             this.UahEurLabel.TabIndex = 7;
             this.UahEurLabel.Text = "UAH :";
-            // 
-            // PlnPicture
-            // 
-            this.PlnPicture.Image = global::Exchange.Properties.Resources.plnFlag;
-            this.PlnPicture.Location = new System.Drawing.Point(28, 391);
-            this.PlnPicture.Name = "PlnPicture";
-            this.PlnPicture.Size = new System.Drawing.Size(46, 27);
-            this.PlnPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PlnPicture.TabIndex = 16;
-            this.PlnPicture.TabStop = false;
             // 
             // PlnBuyingLabel
             // 
             this.PlnBuyingLabel.AutoSize = true;
-            this.PlnBuyingLabel.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlnBuyingLabel.Location = new System.Drawing.Point(80, 391);
+            this.PlnBuyingLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlnBuyingLabel.Location = new System.Drawing.Point(101, 386);
             this.PlnBuyingLabel.Name = "PlnBuyingLabel";
-            this.PlnBuyingLabel.Size = new System.Drawing.Size(85, 31);
+            this.PlnBuyingLabel.Size = new System.Drawing.Size(92, 38);
             this.PlnBuyingLabel.TabIndex = 15;
             this.PlnBuyingLabel.Text = "PLN :";
+            this.PlnBuyingLabel.Click += new System.EventHandler(this.PlnBuyingLabel_Click);
             // 
             // UahPlnText
             // 
@@ -216,10 +211,10 @@
             // UahPlnLabel
             // 
             this.UahPlnLabel.AutoSize = true;
-            this.UahPlnLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UahPlnLabel.Location = new System.Drawing.Point(75, 457);
+            this.UahPlnLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UahPlnLabel.Location = new System.Drawing.Point(94, 456);
             this.UahPlnLabel.Name = "UahPlnLabel";
-            this.UahPlnLabel.Size = new System.Drawing.Size(90, 31);
+            this.UahPlnLabel.Size = new System.Drawing.Size(102, 38);
             this.UahPlnLabel.TabIndex = 12;
             this.UahPlnLabel.Text = "UAH :";
             // 
@@ -227,11 +222,11 @@
             // 
             this.CalculateUsdButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculateUsdButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateUsdButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculateUsdButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateUsdButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculateUsdButton.Location = new System.Drawing.Point(362, 132);
             this.CalculateUsdButton.Name = "CalculateUsdButton";
-            this.CalculateUsdButton.Size = new System.Drawing.Size(91, 28);
+            this.CalculateUsdButton.Size = new System.Drawing.Size(100, 30);
             this.CalculateUsdButton.TabIndex = 17;
             this.CalculateUsdButton.Text = "Calculate";
             this.CalculateUsdButton.UseVisualStyleBackColor = false;
@@ -241,11 +236,11 @@
             // 
             this.CalculateEurButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculateEurButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateEurButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculateEurButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateEurButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculateEurButton.Location = new System.Drawing.Point(362, 282);
             this.CalculateEurButton.Name = "CalculateEurButton";
-            this.CalculateEurButton.Size = new System.Drawing.Size(91, 28);
+            this.CalculateEurButton.Size = new System.Drawing.Size(100, 30);
             this.CalculateEurButton.TabIndex = 18;
             this.CalculateEurButton.Text = "Calculate";
             this.CalculateEurButton.UseVisualStyleBackColor = false;
@@ -255,11 +250,11 @@
             // 
             this.CalculatePlnButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculatePlnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatePlnButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculatePlnButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculatePlnButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculatePlnButton.Location = new System.Drawing.Point(362, 426);
             this.CalculatePlnButton.Name = "CalculatePlnButton";
-            this.CalculatePlnButton.Size = new System.Drawing.Size(91, 28);
+            this.CalculatePlnButton.Size = new System.Drawing.Size(100, 30);
             this.CalculatePlnButton.TabIndex = 19;
             this.CalculatePlnButton.Text = "Calculate";
             this.CalculatePlnButton.UseVisualStyleBackColor = false;
@@ -269,11 +264,11 @@
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BackButton.ForeColor = System.Drawing.Color.Gold;
             this.BackButton.Location = new System.Drawing.Point(362, 504);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(88, 26);
+            this.BackButton.Size = new System.Drawing.Size(100, 30);
             this.BackButton.TabIndex = 20;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
@@ -281,27 +276,84 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.BackColor = System.Drawing.Color.Red;
-            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ExitButton.Location = new System.Drawing.Point(453, 0);
+            this.ExitButton.BackColor = System.Drawing.Color.Black;
+            this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.ForeColor = System.Drawing.Color.Gold;
+            this.ExitButton.Location = new System.Drawing.Point(454, 1);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(26, 26);
+            this.ExitButton.Size = new System.Drawing.Size(25, 25);
             this.ExitButton.TabIndex = 21;
             this.ExitButton.Text = "X";
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // TurnButton
+            // pictureBox1
             // 
-            this.TurnButton.Location = new System.Drawing.Point(429, 0);
-            this.TurnButton.Name = "TurnButton";
-            this.TurnButton.Size = new System.Drawing.Size(24, 23);
-            this.TurnButton.TabIndex = 22;
-            this.TurnButton.Text = "-";
-            this.TurnButton.UseVisualStyleBackColor = true;
-            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::Exchange.Properties.Resources.NewUahFlag;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 164);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PlnPicture
+            // 
+            this.PlnPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PlnPicture.Image = global::Exchange.Properties.Resources.NewPlnFlag;
+            this.PlnPicture.Location = new System.Drawing.Point(15, 386);
+            this.PlnPicture.Name = "PlnPicture";
+            this.PlnPicture.Size = new System.Drawing.Size(80, 40);
+            this.PlnPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PlnPicture.TabIndex = 16;
+            this.PlnPicture.TabStop = false;
+            // 
+            // EurPicture
+            // 
+            this.EurPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EurPicture.Image = global::Exchange.Properties.Resources.eurFlag;
+            this.EurPicture.Location = new System.Drawing.Point(15, 239);
+            this.EurPicture.Name = "EurPicture";
+            this.EurPicture.Size = new System.Drawing.Size(80, 40);
+            this.EurPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EurPicture.TabIndex = 11;
+            this.EurPicture.TabStop = false;
+            // 
+            // UsdPicture
+            // 
+            this.UsdPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsdPicture.Image = global::Exchange.Properties.Resources.NewUsdFlag;
+            this.UsdPicture.Location = new System.Drawing.Point(15, 91);
+            this.UsdPicture.Name = "UsdPicture";
+            this.UsdPicture.Size = new System.Drawing.Size(80, 40);
+            this.UsdPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UsdPicture.TabIndex = 6;
+            this.UsdPicture.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::Exchange.Properties.Resources.NewUahFlag;
+            this.pictureBox2.Location = new System.Drawing.Point(15, 312);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = global::Exchange.Properties.Resources.NewUahFlag;
+            this.pictureBox3.Location = new System.Drawing.Point(15, 456);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
             // 
             // Buy
             // 
@@ -309,7 +361,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(478, 546);
-            this.Controls.Add(this.TurnButton);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.CalculatePlnButton);
@@ -337,10 +391,12 @@
             this.Name = "Buy";
             this.Text = "Calculate";
             this.BuyPanel.ResumeLayout(false);
-            this.BuyPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlnPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,5 +427,8 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button TurnButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

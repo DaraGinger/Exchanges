@@ -1,10 +1,14 @@
 ﻿namespace Exchange
 {
     using System;
+using System.Drawing;
     using System.Windows.Forms;
 
     public partial class Buy : Form
     {
+        private bool pressingTheLeftMouseButton = false;
+        private Point mouseLocation;
+
         public Buy()
         {
             InitializeComponent();
@@ -91,7 +95,10 @@
         }
 
         private void BackButton_Click(object sender, EventArgs e)
-        {
+        {    
+            exchange.StartPosition = FormStartPosition.Manual;
+            exchange.Location = this.Location;
+            exchange.Size = this.Size;
             exchange.Show();
             this.Close();
         }
@@ -195,6 +202,43 @@
         private void TurnButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void PlnBuyingLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuyingLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xMouseLocationOnScreen;
+            int yMouseLocationOnScreen;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xMouseLocationOnScreen = -e.X;
+                yMouseLocationOnScreen = -e.Y;
+                this.mouseLocation = new Point(xMouseLocationOnScreen, yMouseLocationOnScreen);
+                this.pressingTheLeftMouseButton = true;
+            }
+        }
+
+        private void BuyingLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (this.pressingTheLeftMouseButton)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(this.mouseLocation.X, this.mouseLocation.Y);
+                this.Location = mousePos;
+            }
+        }
+
+        private void BuyingLabel_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.pressingTheLeftMouseButton = false;
+            }
         }
     }
 }
