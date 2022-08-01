@@ -10,7 +10,7 @@
             InitializeComponent();
         }
 
-        ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[2];
+        ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[1];
        
         private void CalculateUsdButton_Click(object sender, EventArgs e)
         {
@@ -93,7 +93,7 @@
         private void BackButton_Click(object sender, EventArgs e)
         {
             exchange.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void UsdText_KeyPress(object sender, KeyPressEventArgs key)
@@ -190,6 +190,11 @@
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TurnButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -49,13 +49,12 @@
             this.PlnFlagPicture = new System.Windows.Forms.PictureBox();
             this.EurFlagPicture = new System.Windows.Forms.PictureBox();
             this.UsdFlagPicture = new System.Windows.Forms.PictureBox();
-            this.ExitButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.ExchangePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlnFlagPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurFlagPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsdFlagPicture)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ExchangePanel
@@ -140,6 +139,7 @@
             // UpdasteButton
             // 
             this.UpdasteButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UpdasteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UpdasteButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpdasteButton.FlatAppearance.BorderSize = 0;
             this.UpdasteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -157,6 +157,8 @@
             // BuyingButton
             // 
             this.BuyingButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BuyingButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuyingButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BuyingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuyingButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BuyingButton.ForeColor = System.Drawing.Color.Gold;
@@ -172,6 +174,8 @@
             // SellButton
             // 
             this.SellButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SellButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SellButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.SellButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SellButton.ForeColor = System.Drawing.Color.Gold;
@@ -202,7 +206,7 @@
             this.EurBuyLabel.Name = "EurBuyLabel";
             this.EurBuyLabel.Size = new System.Drawing.Size(87, 31);
             this.EurBuyLabel.TabIndex = 27;
-            this.EurBuyLabel.Text = "27,30";
+            this.EurBuyLabel.Text = "31,57";
             // 
             // PlnBuyLabel
             // 
@@ -210,9 +214,9 @@
             this.PlnBuyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnBuyLabel.Location = new System.Drawing.Point(32, 391);
             this.PlnBuyLabel.Name = "PlnBuyLabel";
-            this.PlnBuyLabel.Size = new System.Drawing.Size(87, 31);
+            this.PlnBuyLabel.Size = new System.Drawing.Size(71, 31);
             this.PlnBuyLabel.TabIndex = 28;
-            this.PlnBuyLabel.Text = "27,30";
+            this.PlnBuyLabel.Text = "5,45";
             // 
             // UsdSellLabel
             // 
@@ -222,7 +226,7 @@
             this.UsdSellLabel.Name = "UsdSellLabel";
             this.UsdSellLabel.Size = new System.Drawing.Size(87, 31);
             this.UsdSellLabel.TabIndex = 29;
-            this.UsdSellLabel.Text = "27,30";
+            this.UsdSellLabel.Text = "28,60";
             // 
             // EurSellLabel
             // 
@@ -232,7 +236,7 @@
             this.EurSellLabel.Name = "EurSellLabel";
             this.EurSellLabel.Size = new System.Drawing.Size(87, 31);
             this.EurSellLabel.TabIndex = 30;
-            this.EurSellLabel.Text = "27,30";
+            this.EurSellLabel.Text = "32,90";
             // 
             // PlnSellLabel
             // 
@@ -240,13 +244,15 @@
             this.PlnSellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnSellLabel.Location = new System.Drawing.Point(360, 391);
             this.PlnSellLabel.Name = "PlnSellLabel";
-            this.PlnSellLabel.Size = new System.Drawing.Size(87, 31);
+            this.PlnSellLabel.Size = new System.Drawing.Size(71, 31);
             this.PlnSellLabel.TabIndex = 32;
-            this.PlnSellLabel.Text = "27,30";
+            this.PlnSellLabel.Text = "6,66";
             // 
             // SaveButton
             // 
             this.SaveButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SaveButton.ForeColor = System.Drawing.Color.Gold;
@@ -291,36 +297,39 @@
             this.UsdFlagPicture.TabIndex = 6;
             this.UsdFlagPicture.TabStop = false;
             // 
-            // ExitButton
+            // CloseButton
             // 
-            this.ExitButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.ExitButton.BackColor = System.Drawing.Color.Crimson;
-            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitButton.Location = new System.Drawing.Point(455, 0);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(22, 22);
-            this.ExitButton.TabIndex = 34;
-            this.ExitButton.Text = "X";
-            this.ExitButton.UseVisualStyleBackColor = false;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.CloseButton.BackColor = System.Drawing.Color.Gold;
+            this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CloseButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CloseButton.Location = new System.Drawing.Point(442, -1);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(36, 26);
+            this.CloseButton.TabIndex = 34;
+            this.CloseButton.Text = "X";
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // panel1
+            // button2
             // 
-            this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
-            this.panel1.Controls.Add(this.ExitButton);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(478, 22);
-            this.panel1.TabIndex = 35;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(414, -1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(33, 26);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ExchangeMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(478, 546);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(479, 553);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.PlnSellLabel);
             this.Controls.Add(this.EurSellLabel);
@@ -352,7 +361,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PlnFlagPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurFlagPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsdFlagPicture)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,7 +388,7 @@
         public System.Windows.Forms.Label EurSellLabel;
         public System.Windows.Forms.Label PlnSellLabel;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -51,6 +51,7 @@
             this.CalculatePlnButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.TurnButton = new System.Windows.Forms.Button();
             this.BuyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).BeginInit();
@@ -63,7 +64,7 @@
             this.BuyPanel.Controls.Add(this.BuyingLabel);
             this.BuyPanel.Location = new System.Drawing.Point(-4, 24);
             this.BuyPanel.Name = "BuyPanel";
-            this.BuyPanel.Size = new System.Drawing.Size(468, 52);
+            this.BuyPanel.Size = new System.Drawing.Size(483, 52);
             this.BuyPanel.TabIndex = 0;
             // 
             // BuyingLabel
@@ -90,17 +91,19 @@
             // 
             // UsdText
             // 
+            this.UsdText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsdText.Location = new System.Drawing.Point(195, 103);
             this.UsdText.Name = "UsdText";
-            this.UsdText.Size = new System.Drawing.Size(146, 20);
+            this.UsdText.Size = new System.Drawing.Size(146, 26);
             this.UsdText.TabIndex = 3;
             this.UsdText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UsdText_KeyPress);
             // 
             // UahUsdText
             // 
+            this.UahUsdText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahUsdText.Location = new System.Drawing.Point(195, 176);
             this.UahUsdText.Name = "UahUsdText";
-            this.UahUsdText.Size = new System.Drawing.Size(146, 20);
+            this.UahUsdText.Size = new System.Drawing.Size(146, 26);
             this.UahUsdText.TabIndex = 4;
             this.UahUsdText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UahUsdText_KeyPress);
             // 
@@ -146,17 +149,19 @@
             // 
             // UahEurText
             // 
+            this.UahEurText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahEurText.Location = new System.Drawing.Point(195, 324);
             this.UahEurText.Name = "UahEurText";
-            this.UahEurText.Size = new System.Drawing.Size(146, 20);
+            this.UahEurText.Size = new System.Drawing.Size(146, 26);
             this.UahEurText.TabIndex = 9;
             this.UahEurText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UahEurText_KeyPress);
             // 
             // EurText
             // 
+            this.EurText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EurText.Location = new System.Drawing.Point(195, 251);
             this.EurText.Name = "EurText";
-            this.EurText.Size = new System.Drawing.Size(146, 20);
+            this.EurText.Size = new System.Drawing.Size(146, 26);
             this.EurText.TabIndex = 8;
             this.EurText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EurText_KeyPress);
             // 
@@ -192,17 +197,19 @@
             // 
             // UahPlnText
             // 
+            this.UahPlnText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UahPlnText.Location = new System.Drawing.Point(195, 468);
             this.UahPlnText.Name = "UahPlnText";
-            this.UahPlnText.Size = new System.Drawing.Size(146, 20);
+            this.UahPlnText.Size = new System.Drawing.Size(146, 26);
             this.UahPlnText.TabIndex = 14;
             this.UahPlnText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UahPlnText_KeyPress);
             // 
             // PlnText
             // 
+            this.PlnText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlnText.Location = new System.Drawing.Point(195, 395);
             this.PlnText.Name = "PlnText";
-            this.PlnText.Size = new System.Drawing.Size(146, 20);
+            this.PlnText.Size = new System.Drawing.Size(146, 26);
             this.PlnText.TabIndex = 13;
             this.PlnText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PlnText_KeyPress);
             // 
@@ -220,7 +227,7 @@
             // 
             this.CalculateUsdButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculateUsdButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateUsdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculateUsdButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateUsdButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculateUsdButton.Location = new System.Drawing.Point(362, 132);
             this.CalculateUsdButton.Name = "CalculateUsdButton";
@@ -234,7 +241,7 @@
             // 
             this.CalculateEurButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculateEurButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculateEurButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculateEurButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateEurButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculateEurButton.Location = new System.Drawing.Point(362, 282);
             this.CalculateEurButton.Name = "CalculateEurButton";
@@ -248,7 +255,7 @@
             // 
             this.CalculatePlnButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CalculatePlnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatePlnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CalculatePlnButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculatePlnButton.ForeColor = System.Drawing.Color.Gold;
             this.CalculatePlnButton.Location = new System.Drawing.Point(362, 426);
             this.CalculatePlnButton.Name = "CalculatePlnButton";
@@ -262,7 +269,7 @@
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BackButton.ForeColor = System.Drawing.Color.Gold;
             this.BackButton.Location = new System.Drawing.Point(362, 504);
             this.BackButton.Name = "BackButton";
@@ -274,13 +281,27 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(457, -1);
+            this.ExitButton.BackColor = System.Drawing.Color.Red;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitButton.Location = new System.Drawing.Point(453, 0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(22, 22);
+            this.ExitButton.Size = new System.Drawing.Size(26, 26);
             this.ExitButton.TabIndex = 21;
             this.ExitButton.Text = "X";
-            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // TurnButton
+            // 
+            this.TurnButton.Location = new System.Drawing.Point(429, 0);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(24, 23);
+            this.TurnButton.TabIndex = 22;
+            this.TurnButton.Text = "-";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
             // Buy
             // 
@@ -288,6 +309,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(478, 546);
+            this.Controls.Add(this.TurnButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.CalculatePlnButton);
@@ -348,5 +370,6 @@
         private System.Windows.Forms.Button CalculatePlnButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button TurnButton;
     }
 }

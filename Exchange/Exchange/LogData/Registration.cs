@@ -41,7 +41,7 @@
                 }
 
                 Authorization authorization = new Authorization();
-                this.Hide();
+                this.Close();
                 authorization.StartPosition = FormStartPosition.Manual;
                 authorization.Location = this.Location;
                 authorization.Size = this.Size;
@@ -55,8 +55,8 @@
 
         private void ComeBackButton_Click(object sender, EventArgs e)
         {
-            MainSelectionMenu mainSelectionMenu = new MainSelectionMenu();
-            this.Hide();
+            MainSelectionMenu mainSelectionMenu = (MainSelectionMenu)Application.OpenForms[0];
+            this.Close();
             mainSelectionMenu.StartPosition = FormStartPosition.Manual;
             mainSelectionMenu.Location = this.Location;
             mainSelectionMenu.Size = this.Size;
@@ -101,6 +101,16 @@
                     SignUpButton.Focus();
                 }
             }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void TurnButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

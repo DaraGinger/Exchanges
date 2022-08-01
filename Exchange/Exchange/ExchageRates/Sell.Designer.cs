@@ -51,6 +51,7 @@
             this.SellingPanel = new System.Windows.Forms.Panel();
             this.SellingLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.TurnButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.UsdPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EurPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlnPicture)).BeginInit();
@@ -292,12 +293,23 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // TurnButton
+            // 
+            this.TurnButton.Location = new System.Drawing.Point(425, -1);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(28, 23);
+            this.TurnButton.TabIndex = 23;
+            this.TurnButton.Text = "-";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
+            // 
             // Sell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(478, 546);
+            this.Controls.Add(this.TurnButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SellingPanel);
             this.Controls.Add(this.PlnPicture);
@@ -357,5 +369,6 @@
         private System.Windows.Forms.Panel SellingPanel;
         private System.Windows.Forms.Label SellingLabel;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button TurnButton;
     }
 }

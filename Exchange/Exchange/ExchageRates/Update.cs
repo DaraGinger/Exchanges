@@ -10,10 +10,12 @@
             InitializeComponent();
         }
 
-        ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[2];
 
+
+        ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[1];
         private void OkButton_Click(object sender, EventArgs e)
         {
+            
             exchange.Show();
             this.Hide();
             Validation();
@@ -21,6 +23,7 @@
 
         private void Validation()
         {
+            
 
             if (UsdBuyText.Text.Length == 0)
             {
@@ -175,6 +178,11 @@
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TurnButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

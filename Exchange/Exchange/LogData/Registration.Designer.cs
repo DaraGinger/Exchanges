@@ -38,6 +38,8 @@
             this.RepeatPasswordField = new System.Windows.Forms.TextBox();
             this.FormName = new System.Windows.Forms.Label();
             this.ComeBackButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.TurnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SignUpButton
@@ -142,6 +144,26 @@
             this.ComeBackButton.UseVisualStyleBackColor = false;
             this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(439, -1);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(23, 23);
+            this.ExitButton.TabIndex = 14;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // TurnButton
+            // 
+            this.TurnButton.Location = new System.Drawing.Point(410, -1);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(23, 23);
+            this.TurnButton.TabIndex = 15;
+            this.TurnButton.Text = "button2";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +171,8 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.TurnButton);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ComeBackButton);
             this.Controls.Add(this.FormName);
             this.Controls.Add(this.RepeatPasswordLabel);
@@ -159,7 +183,7 @@
             this.Controls.Add(this.PasswordField);
             this.Controls.Add(this.LoginField);
             this.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -180,5 +204,7 @@
         private System.Windows.Forms.TextBox RepeatPasswordField;
         private System.Windows.Forms.Label FormName;
         private System.Windows.Forms.Button ComeBackButton;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button TurnButton;
     }
 }

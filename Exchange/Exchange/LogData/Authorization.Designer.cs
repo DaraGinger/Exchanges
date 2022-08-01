@@ -37,6 +37,8 @@
             this.FormName = new System.Windows.Forms.Label();
             this.ResetPasswordLabelLink = new System.Windows.Forms.LinkLabel();
             this.ComeBackButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.TurnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LoginField
@@ -136,12 +138,34 @@
             this.ComeBackButton.UseVisualStyleBackColor = false;
             this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(436, 13);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(24, 23);
+            this.ExitButton.TabIndex = 8;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // TurnButton
+            // 
+            this.TurnButton.Location = new System.Drawing.Point(436, 42);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(24, 23);
+            this.TurnButton.TabIndex = 9;
+            this.TurnButton.Text = "-";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
+            // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.TurnButton);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ComeBackButton);
             this.Controls.Add(this.ResetPasswordLabelLink);
             this.Controls.Add(this.FormName);
@@ -150,12 +174,11 @@
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.PasswordField);
             this.Controls.Add(this.LoginField);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Authorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Authorization";
-            this.Load += new System.EventHandler(this.Authorization_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +194,7 @@
         private System.Windows.Forms.Label FormName;
         private System.Windows.Forms.LinkLabel ResetPasswordLabelLink;
         private System.Windows.Forms.Button ComeBackButton;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button TurnButton;
     }
 }

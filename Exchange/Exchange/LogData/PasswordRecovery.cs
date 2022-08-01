@@ -47,7 +47,7 @@
         private void ComeBackButton_Click(object sender, EventArgs e)
         {
             Authorization authorization = new Authorization();
-            this.Hide();
+            this.Close();
             authorization.StartPosition = FormStartPosition.Manual;
             authorization.Location = this.Location;
             authorization.Size = this.Size;
@@ -109,8 +109,8 @@
 
             if (correctCount == 1 && this.NewPasswordField.Text.Length > 0)
             {
-                Authorization authorization = new Authorization();
-                this.Hide();
+                Authorization authorization = (Authorization)Application.OpenForms[1];
+                this.Close();
                 authorization.StartPosition = FormStartPosition.Manual;
                 authorization.Location = this.Location;
                 authorization.Size = this.Size;
@@ -148,6 +148,16 @@
                     ChangePasswordButton.Focus();
                 }
             }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void TurnButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -28,9 +28,14 @@
             registration.Show();
         }
 
-        private void MainMenu_Load(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void turnButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

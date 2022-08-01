@@ -57,18 +57,13 @@
 
         private void ComeBackButton_Click(object sender, EventArgs e)
         {
-            MainSelectionMenu mainSelectionMenu = new MainSelectionMenu();
-            this.Hide();
+            MainSelectionMenu mainSelectionMenu = (MainSelectionMenu)Application.OpenForms[0];
+            this.Close();
             mainSelectionMenu.StartPosition = FormStartPosition.Manual;
             mainSelectionMenu.Location = this.Location;
             mainSelectionMenu.Size = this.Size;
             mainSelectionMenu.Show();
             
-        }
-
-        private void Authorization_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void AuthorizationDataVerification()
@@ -106,10 +101,9 @@
             if (correctCount == 1)
             {
                 ExchangeMainPage exchange = new ExchangeMainPage();
-                this.Hide();
+                this.Close();
                 exchange.StartPosition = FormStartPosition.Manual;
                 exchange.Location = this.Location;
-                exchange.Size = this.Size;
                 exchange.Show();
             }
             else
@@ -142,6 +136,16 @@
                     SignInButton.Focus();
                 }
             }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void TurnButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

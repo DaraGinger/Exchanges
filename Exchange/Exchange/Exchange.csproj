@@ -145,7 +145,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExchageRates\SaveKourse\" />
     <Folder Include="LogData\Logs\" />
   </ItemGroup>
   <ItemGroup>

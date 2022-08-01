@@ -34,6 +34,8 @@
             this.RegistrationLabel = new System.Windows.Forms.Label();
             this.SignInButton = new System.Windows.Forms.Button();
             this.SignUpButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.turnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FormName
@@ -95,23 +97,44 @@
             this.SignUpButton.UseVisualStyleBackColor = false;
             this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(438, -1);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(24, 23);
+            this.ExitButton.TabIndex = 16;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // turnButton
+            // 
+            this.turnButton.Location = new System.Drawing.Point(438, 28);
+            this.turnButton.Name = "turnButton";
+            this.turnButton.Size = new System.Drawing.Size(28, 23);
+            this.turnButton.TabIndex = 17;
+            this.turnButton.Text = "-";
+            this.turnButton.UseVisualStyleBackColor = true;
+            this.turnButton.Click += new System.EventHandler(this.turnButton_Click);
+            // 
             // MainSelectionMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
+            this.Controls.Add(this.turnButton);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SignUpButton);
             this.Controls.Add(this.SignInButton);
             this.Controls.Add(this.RegistrationLabel);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.FormName);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainSelectionMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Selection Menu";
-            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
 
         }
@@ -123,5 +146,7 @@
         private System.Windows.Forms.Label RegistrationLabel;
         private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.Button SignUpButton;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button turnButton;
     }
 }

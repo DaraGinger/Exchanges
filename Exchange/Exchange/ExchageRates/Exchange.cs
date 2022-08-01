@@ -6,6 +6,7 @@
 
     public partial class ExchangeMainPage : Form
     {
+        private string path = Application.StartupPath + @"\SaveKourse\Kourse.txt";
         Update updateForm;
         public ExchangeMainPage()
         {
@@ -15,22 +16,14 @@
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             updateForm = new Update();
-            updateForm.StartPosition = FormStartPosition.Manual;
-            updateForm.Location = this.Location;
-            updateForm.Size = this.Size;
             updateForm.Show();          
-            updateForm.Owner = this;
             this.Hide();         
         }
-
 
         private void BuyingButton_Click(object sender, EventArgs e)
         {
             Buy buyPage = new Buy();
             this.Hide();
-            buyPage.StartPosition = FormStartPosition.Manual;
-            buyPage.Location = this.Location;
-            buyPage.Size = this.Size;
             buyPage.Show();
 
         }
@@ -39,24 +32,26 @@
         {
             Sell sellPage = new Sell();
             this.Hide();
-            sellPage.StartPosition = FormStartPosition.Manual;
-            sellPage.Location = this.Location;
-            sellPage.Size = this.Size;
             sellPage.Show();
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            File.Create(@"\SaveKourse\\Kourse.txt").Close();
-            File.WriteAllText(@"\SaveKourse\\Kourse.txt", $"Buy \t    \t Sell \t \t \t \t \t \t \t \t \t \t \t \t \t" +
-                                                           $"{UsdBuyLabel.Text} \t {UsdLabel.Text} \t {UsdSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
-                                                           $"{EurBuyLabel.Text} \t {EurLabel.Text} \t {EurSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
-                                                           $"{PlnBuyLabel.Text} \t {PlnLabel.Text} \t {PlnSellLabel.Text} ");
+            File.Create(path).Close();
+            File.WriteAllText(path, $"Buy \t    \t Sell \t \t \t \t \t \t \t \t \t \t \t \t \t" +
+                                    $"{UsdBuyLabel.Text} \t {UsdLabel.Text} \t {UsdSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
+                                    $"{EurBuyLabel.Text} \t {EurLabel.Text} \t {EurSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
+                                    $"{PlnBuyLabel.Text} \t {PlnLabel.Text} \t {PlnSellLabel.Text} ");
         }
 
-        private void ExitButton_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
