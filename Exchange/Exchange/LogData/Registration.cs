@@ -68,8 +68,6 @@
         {
             char validate = key.KeyChar;
 
-            Key.EnterText(key);
-
             if (Char.IsControl(validate))
             {
                 if (validate == (char)Keys.Enter)
@@ -83,8 +81,6 @@
         {
             char validate = key.KeyChar;
 
-            Key.EnterText(key);
-
             if (Char.IsControl(validate))
             {
                 if (validate == (char)Keys.Enter)
@@ -97,8 +93,6 @@
         private void RepeatPasswordField_KeyPress(object sender, KeyPressEventArgs key)
         {
             char validate = key.KeyChar;
-
-            Key.EnterText(key);
 
             if (Char.IsControl(validate))
             {

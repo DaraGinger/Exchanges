@@ -135,8 +135,6 @@
         {
             char validate = key.KeyChar;
 
-            Key.EnterText(key);
-
             if (Char.IsControl(validate))
             {
                 if (validate == (char)Keys.Enter)
