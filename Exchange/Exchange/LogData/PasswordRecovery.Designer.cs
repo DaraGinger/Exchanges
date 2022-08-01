@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasswordRecovery));
             this.FormName = new System.Windows.Forms.Label();
             this.ChangePasswordButton = new System.Windows.Forms.Button();
             this.LoginLabel = new System.Windows.Forms.Label();
@@ -131,6 +132,7 @@
             this.Controls.Add(this.LoginField);
             this.Controls.Add(this.FormName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PasswordRecovery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Password Recovery";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authorization));
             this.LoginField = new System.Windows.Forms.TextBox();
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LoginLabel = new System.Windows.Forms.Label();
@@ -150,6 +151,7 @@
             this.Controls.Add(this.PasswordField);
             this.Controls.Add(this.LoginField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Authorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Authorization";
