@@ -1,12 +1,15 @@
 ﻿namespace Exchange.LogData
 {
     using System;
+    using System.Drawing;
     using System.IO;
     using System.Windows.Forms;
     using Exchange;
     public partial class Authorization : Form
     {
         private string path = Application.StartupPath + @"\Logs\MyLogs.txt";
+        private bool pressingTheLeftMouseButton = false;
+        private Point mouseLocation;
 
         public Authorization()
         {
@@ -26,7 +29,7 @@
         }
 
         private void SignInButton_Click(object sender, EventArgs e)
-        {             
+        {
             if (this.LoginField.Text.Length > 0 && this.PasswordField.Text.Length > 0)
             {
                 AuthorizationDataVerification();
@@ -63,53 +66,61 @@
             mainSelectionMenu.Location = this.Location;
             mainSelectionMenu.Size = this.Size;
             mainSelectionMenu.Show();
-            
+
         }
 
         private void AuthorizationDataVerification()
         {
-            string[] readData = File.ReadAllLines(this.path);
-            string[] loginData = new string[readData.Length];
-            string[] passwordData = new string[readData.Length];
-            int countLoginArray = 0;
-            int countPasswordArray = 0;
-            int correctCount = 0;
-
-            for (int i = 0; i < readData.Length; i++)
+            if (File.Exists(this.path))
             {
-                if (i % 2 == 0)
+                string[] readData = File.ReadAllLines(this.path);
+                string[] loginData = new string[readData.Length];
+                string[] passwordData = new string[readData.Length];
+                int countLoginArray = 0;
+                int countPasswordArray = 0;
+                int correctCount = 0;
+
+                for (int i = 0; i < readData.Length; i++)
                 {
-                    loginData[countLoginArray] = readData[i];
-                    countLoginArray++;
+                    if (i % 2 == 0)
+                    {
+                        loginData[countLoginArray] = readData[i];
+                        countLoginArray++;
+                    }
+                    else
+                    {
+                        passwordData[countPasswordArray] = readData[i];
+                        countPasswordArray++;
+                    }
+                }
+
+                for (int i = 0; i < readData.Length / 2; i++)
+                {
+                    if (this.LoginField.Text == loginData[i] && this.PasswordField.Text == passwordData[i])
+                    {
+                        correctCount++;
+                        break;
+                    }
+                }
+
+                if (correctCount == 1)
+                {
+                    ExchangeMainPage exchange = new ExchangeMainPage();
+                    this.Close();
+                    exchange.StartPosition = FormStartPosition.Manual;
+                    exchange.Location = this.Location;
+                    exchange.Show();
                 }
                 else
                 {
-                    passwordData[countPasswordArray] = readData[i];
-                    countPasswordArray++;
+                    MessageBox.Show("Wrong logs!");
                 }
-            }
-
-            for (int i = 0; i < readData.Length / 2; i++)
-            {
-                if (this.LoginField.Text == loginData[i] && this.PasswordField.Text == passwordData[i])
-                {
-                    correctCount++;
-                    break;
-                }
-            }
-
-            if (correctCount == 1)
-            {
-                ExchangeMainPage exchange = new ExchangeMainPage();
-                this.Close();
-                exchange.StartPosition = FormStartPosition.Manual;
-                exchange.Location = this.Location;
-                exchange.Show();
             }
             else
             {
-                MessageBox.Show("Wrong logs!");
+                MessageBox.Show("You don't have a data file! Register before login!");
             }
+
         }
 
         private void LoginField_KeyPress(object sender, KeyPressEventArgs key)
@@ -146,6 +157,38 @@
         private void TurnButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void FormName_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xMouseLocationOnScreen;
+            int yMouseLocationOnScreen;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xMouseLocationOnScreen = -e.X;
+                yMouseLocationOnScreen = -e.Y;
+                this.mouseLocation = new Point(xMouseLocationOnScreen, yMouseLocationOnScreen);
+                this.pressingTheLeftMouseButton = true;
+            }
+        }
+
+        private void FormName_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (this.pressingTheLeftMouseButton)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(this.mouseLocation.X, this.mouseLocation.Y);
+                this.Location = mousePos;
+            }
+        }
+
+        private void FormName_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.pressingTheLeftMouseButton = false;
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Exchange.LogData
+﻿using System.Windows.Forms;
+
+namespace Exchange.LogData
 {
     partial class MainSelectionMenu
     {
@@ -35,14 +37,14 @@
             this.SignInButton = new System.Windows.Forms.Button();
             this.SignUpButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.turnButton = new System.Windows.Forms.Button();
+            this.TurnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FormName
             // 
             this.FormName.BackColor = System.Drawing.Color.White;
             this.FormName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FormName.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FormName.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormName.Location = new System.Drawing.Point(0, -1);
             this.FormName.Name = "FormName";
@@ -50,11 +52,14 @@
             this.FormName.TabIndex = 6;
             this.FormName.Text = "Main Selection Menu";
             this.FormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FormName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormName_MouseDown);
+            this.FormName.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormName_MouseMove);
+            this.FormName.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormName_MouseUp);
             // 
             // LoginLabel
             // 
             this.LoginLabel.BackColor = System.Drawing.Color.Transparent;
-            this.LoginLabel.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginLabel.Location = new System.Drawing.Point(88, 143);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(293, 50);
@@ -65,7 +70,7 @@
             // RegistrationLabel
             // 
             this.RegistrationLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RegistrationLabel.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegistrationLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegistrationLabel.Location = new System.Drawing.Point(88, 263);
             this.RegistrationLabel.Name = "RegistrationLabel";
             this.RegistrationLabel.Size = new System.Drawing.Size(293, 50);
@@ -76,7 +81,7 @@
             // SignInButton
             // 
             this.SignInButton.BackColor = System.Drawing.SystemColors.Window;
-            this.SignInButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SignInButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignInButton.Location = new System.Drawing.Point(115, 196);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(231, 32);
@@ -88,7 +93,7 @@
             // SignUpButton
             // 
             this.SignUpButton.BackColor = System.Drawing.SystemColors.Window;
-            this.SignUpButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SignUpButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignUpButton.Location = new System.Drawing.Point(115, 316);
             this.SignUpButton.Name = "SignUpButton";
             this.SignUpButton.Size = new System.Drawing.Size(231, 32);
@@ -99,23 +104,33 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(438, -1);
+            this.ExitButton.BackColor = System.Drawing.Color.White;
+            this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.ForeColor = System.Drawing.Color.Red;
+            this.ExitButton.Location = new System.Drawing.Point(437, -1);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(24, 23);
+            this.ExitButton.Size = new System.Drawing.Size(25, 25);
             this.ExitButton.TabIndex = 16;
             this.ExitButton.Text = "X";
-            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // turnButton
+            // TurnButton
             // 
-            this.turnButton.Location = new System.Drawing.Point(438, 28);
-            this.turnButton.Name = "turnButton";
-            this.turnButton.Size = new System.Drawing.Size(28, 23);
-            this.turnButton.TabIndex = 17;
-            this.turnButton.Text = "-";
-            this.turnButton.UseVisualStyleBackColor = true;
-            this.turnButton.Click += new System.EventHandler(this.turnButton_Click);
+            this.TurnButton.BackColor = System.Drawing.Color.White;
+            this.TurnButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TurnButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TurnButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TurnButton.Location = new System.Drawing.Point(437, 24);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(25, 25);
+            this.TurnButton.TabIndex = 17;
+            this.TurnButton.Text = "—";
+            this.TurnButton.UseVisualStyleBackColor = false;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
             // MainSelectionMenu
             // 
@@ -123,7 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Exchange.Properties.Resources.WoodWorkplace;
             this.ClientSize = new System.Drawing.Size(462, 507);
-            this.Controls.Add(this.turnButton);
+            this.Controls.Add(this.TurnButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SignUpButton);
             this.Controls.Add(this.SignInButton);
@@ -147,6 +162,6 @@
         private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.Button SignUpButton;
         private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Button turnButton;
+        private System.Windows.Forms.Button TurnButton;
     }
 }

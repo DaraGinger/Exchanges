@@ -37,8 +37,8 @@
             this.FormName = new System.Windows.Forms.Label();
             this.ResetPasswordLabelLink = new System.Windows.Forms.LinkLabel();
             this.ComeBackButton = new System.Windows.Forms.Button();
-            this.ExitButton = new System.Windows.Forms.Button();
             this.TurnButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LoginField
@@ -64,10 +64,10 @@
             // LoginLabel
             // 
             this.LoginLabel.BackColor = System.Drawing.Color.Transparent;
-            this.LoginLabel.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginLabel.Location = new System.Drawing.Point(115, 134);
+            this.LoginLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginLabel.Location = new System.Drawing.Point(115, 131);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(231, 23);
+            this.LoginLabel.Size = new System.Drawing.Size(231, 25);
             this.LoginLabel.TabIndex = 2;
             this.LoginLabel.Text = "Login";
             this.LoginLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -76,10 +76,10 @@
             // 
             this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.PasswordLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PasswordLabel.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordLabel.Location = new System.Drawing.Point(115, 204);
+            this.PasswordLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordLabel.Location = new System.Drawing.Point(114, 201);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(227, 24);
+            this.PasswordLabel.Size = new System.Drawing.Size(231, 25);
             this.PasswordLabel.TabIndex = 3;
             this.PasswordLabel.Text = "Password";
             this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -87,7 +87,7 @@
             // SignInButton
             // 
             this.SignInButton.BackColor = System.Drawing.Color.White;
-            this.SignInButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SignInButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignInButton.Location = new System.Drawing.Point(115, 299);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(231, 32);
@@ -100,7 +100,7 @@
             // 
             this.FormName.BackColor = System.Drawing.Color.White;
             this.FormName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FormName.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FormName.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormName.Location = new System.Drawing.Point(0, -1);
             this.FormName.Name = "FormName";
@@ -108,13 +108,16 @@
             this.FormName.TabIndex = 5;
             this.FormName.Text = "Authorization";
             this.FormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FormName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormName_MouseDown);
+            this.FormName.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormName_MouseMove);
+            this.FormName.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormName_MouseUp);
             // 
             // ResetPasswordLabelLink
             // 
             this.ResetPasswordLabelLink.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
             this.ResetPasswordLabelLink.BackColor = System.Drawing.Color.Transparent;
             this.ResetPasswordLabelLink.DisabledLinkColor = System.Drawing.Color.Transparent;
-            this.ResetPasswordLabelLink.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ResetPasswordLabelLink.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ResetPasswordLabelLink.LinkColor = System.Drawing.Color.White;
             this.ResetPasswordLabelLink.Location = new System.Drawing.Point(115, 264);
             this.ResetPasswordLabelLink.Name = "ResetPasswordLabelLink";
@@ -129,7 +132,7 @@
             // ComeBackButton
             // 
             this.ComeBackButton.BackColor = System.Drawing.Color.White;
-            this.ComeBackButton.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComeBackButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ComeBackButton.Location = new System.Drawing.Point(115, 369);
             this.ComeBackButton.Name = "ComeBackButton";
             this.ComeBackButton.Size = new System.Drawing.Size(231, 32);
@@ -138,25 +141,35 @@
             this.ComeBackButton.UseVisualStyleBackColor = false;
             this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click);
             // 
-            // ExitButton
-            // 
-            this.ExitButton.Location = new System.Drawing.Point(436, 13);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(24, 23);
-            this.ExitButton.TabIndex = 8;
-            this.ExitButton.Text = "X";
-            this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
             // TurnButton
             // 
-            this.TurnButton.Location = new System.Drawing.Point(436, 42);
+            this.TurnButton.BackColor = System.Drawing.Color.White;
+            this.TurnButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TurnButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TurnButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TurnButton.Location = new System.Drawing.Point(437, 24);
             this.TurnButton.Name = "TurnButton";
-            this.TurnButton.Size = new System.Drawing.Size(24, 23);
-            this.TurnButton.TabIndex = 9;
-            this.TurnButton.Text = "-";
-            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Size = new System.Drawing.Size(25, 25);
+            this.TurnButton.TabIndex = 19;
+            this.TurnButton.Text = "—";
+            this.TurnButton.UseVisualStyleBackColor = false;
             this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.Color.White;
+            this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.ForeColor = System.Drawing.Color.Red;
+            this.ExitButton.Location = new System.Drawing.Point(437, -1);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(25, 25);
+            this.ExitButton.TabIndex = 18;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // Authorization
             // 
@@ -194,7 +207,7 @@
         private System.Windows.Forms.Label FormName;
         private System.Windows.Forms.LinkLabel ResetPasswordLabelLink;
         private System.Windows.Forms.Button ComeBackButton;
-        private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button TurnButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
