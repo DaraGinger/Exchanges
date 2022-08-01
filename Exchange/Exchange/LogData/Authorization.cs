@@ -3,6 +3,7 @@
     using System;
     using System.IO;
     using System.Windows.Forms;
+    using Exchange;
     public partial class Authorization : Form
     {
         private string path = Application.StartupPath + @"\Logs\MyLogs.txt";
@@ -15,6 +16,7 @@
         private void LoginField_TextChanged(object sender, EventArgs e)
         {
             this.LoginField.MaxLength = 16;
+
         }
 
         private void PasswordField_TextChanged(object sender, EventArgs e)
@@ -103,7 +105,7 @@
 
             if (correctCount == 1)
             {
-                Exchange exchange = new Exchange();
+                ExchangeMainPage exchange = new ExchangeMainPage();
                 this.Hide();
                 exchange.StartPosition = FormStartPosition.Manual;
                 exchange.Location = this.Location;
@@ -113,6 +115,34 @@
             else
             {
                 MessageBox.Show("Wrong logs!");
+            }
+        }
+
+        private void LoginField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    PasswordField.Focus();
+                }
+            }
+        }
+
+        private void PasswordField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            Key.EnterText(key);
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    SignInButton.Focus();
+                }
             }
         }
     }

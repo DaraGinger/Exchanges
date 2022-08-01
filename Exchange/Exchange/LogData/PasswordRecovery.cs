@@ -121,5 +121,33 @@
                 MessageBox.Show("Wrong logs!");
             }
         }
+
+        private void LoginField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    NewPasswordField.Focus();
+                }
+            }
+        }
+
+        private void NewPasswordField_KeyPress(object sender, KeyPressEventArgs key)
+        {
+            char validate = key.KeyChar;
+
+            Key.EnterText(key);
+
+            if (Char.IsControl(validate))
+            {
+                if (validate == (char)Keys.Enter)
+                {
+                    ChangePasswordButton.Focus();
+                }
+            }
+        }
     }
 }

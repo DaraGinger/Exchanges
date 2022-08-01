@@ -77,11 +77,11 @@
             // 
             this.LoginField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginField.Location = new System.Drawing.Point(115, 159);
-            this.LoginField.Multiline = false;
             this.LoginField.Name = "LoginField";
-            this.LoginField.Size = new System.Drawing.Size(231, 32);
+            this.LoginField.Size = new System.Drawing.Size(231, 29);
             this.LoginField.TabIndex = 7;
             this.LoginField.TextChanged += new System.EventHandler(this.LoginField_TextChanged);
+            this.LoginField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginField_KeyPress);
             // 
             // NewPasswordLabel
             // 
@@ -99,11 +99,11 @@
             // 
             this.NewPasswordField.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NewPasswordField.Location = new System.Drawing.Point(115, 229);
-            this.NewPasswordField.Multiline = false;
             this.NewPasswordField.Name = "NewPasswordField";
-            this.NewPasswordField.Size = new System.Drawing.Size(231, 32);
+            this.NewPasswordField.Size = new System.Drawing.Size(231, 29);
             this.NewPasswordField.TabIndex = 12;
             this.NewPasswordField.TextChanged += new System.EventHandler(this.NewPasswordField_TextChanged);
+            this.NewPasswordField.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NewPasswordField_KeyPress);
             // 
             // ComeBackButton
             // 
@@ -115,7 +115,7 @@
             this.ComeBackButton.TabIndex = 14;
             this.ComeBackButton.Text = "Come Back";
             this.ComeBackButton.UseVisualStyleBackColor = false;
-            this.ComeBackButton.Click += new System.EventHandler(ComeBackButton_Click);
+            this.ComeBackButton.Click += new System.EventHandler(this.ComeBackButton_Click);
             // 
             // PasswordRecovery
             // 
