@@ -59,6 +59,7 @@
             // ChangePasswordButton
             // 
             this.ChangePasswordButton.BackColor = System.Drawing.Color.White;
+            this.ChangePasswordButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChangePasswordButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangePasswordButton.Location = new System.Drawing.Point(115, 299);
             this.ChangePasswordButton.Name = "ChangePasswordButton";
@@ -114,6 +115,7 @@
             // ComeBackButton
             // 
             this.ComeBackButton.BackColor = System.Drawing.Color.White;
+            this.ComeBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComeBackButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ComeBackButton.Location = new System.Drawing.Point(115, 369);
             this.ComeBackButton.Name = "ComeBackButton";

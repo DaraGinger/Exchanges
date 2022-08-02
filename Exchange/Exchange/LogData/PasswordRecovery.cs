@@ -49,7 +49,7 @@
 
         private void ComeBackButton_Click(object sender, EventArgs e)
         {
-            Authorization authorization = new Authorization();
+            Authorization authorization = (Authorization)Application.OpenForms[1];
             this.Close();
             authorization.StartPosition = FormStartPosition.Manual;
             authorization.Location = this.Location;

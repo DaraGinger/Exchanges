@@ -1,7 +1,7 @@
 ﻿namespace Exchange
 {
     using System;
-using System.Drawing;
+    using System.Drawing;
     using System.Windows.Forms;
 
     public partial class Buy : Form
@@ -15,30 +15,38 @@ using System.Drawing;
         }
 
         ExchangeMainPage exchange = (ExchangeMainPage)Application.OpenForms[1];
-       
+        char validate;
+
+
         private void CalculateUsdButton_Click(object sender, EventArgs e)
         {
             double kourseUsd;
 
             if (UsdText.Text.Length == 0)
             {
-                kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
+                if (UahUsdText.Text.Length > 0)
+                {
+                    kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
 
-                double uah = Convert.ToDouble(UahUsdText.Text);
+                    double uah = Convert.ToDouble(UahUsdText.Text);
 
-                double quotient = uah / kourseUsd;
+                    double quotient = uah / kourseUsd;
 
-                UsdText.Text = quotient.ToString();
+                    UsdText.Text = quotient.ToString();
+                }
             }
             else
             {
-                kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
+                if (UsdText.Text.Length > 0)
+                {
+                    kourseUsd = Convert.ToDouble(exchange.UsdBuyLabel.Text);
 
-                double usd = Convert.ToDouble(UsdText.Text);
+                    double usd = Convert.ToDouble(UsdText.Text);
 
-                double pro = kourseUsd * usd;
+                    double pro = kourseUsd * usd;
 
-                UahUsdText.Text = pro.ToString();
+                    UahUsdText.Text = pro.ToString();
+                }
             }
         }
 
@@ -48,23 +56,29 @@ using System.Drawing;
 
             if (EurText.Text.Length == 0)
             {
-                kourseEur = Convert.ToDouble(exchange.EurBuyLabel.Text);
+                if (UahEurText.Text.Length > 0)
+                {
+                    kourseEur = Convert.ToDouble(exchange.EurBuyLabel.Text);
 
-                double uah = Convert.ToDouble(UahEurText.Text);
+                    double uah = Convert.ToDouble(UahEurText.Text);
 
-                double quotient = uah / kourseEur;
+                    double quotient = uah / kourseEur;
 
-                EurText.Text = quotient.ToString();
+                    EurText.Text = quotient.ToString();
+                }
             }
             else
             {
-                kourseEur = Convert.ToDouble(exchange.EurBuyLabel.Text);
+                if (EurText.Text.Length > 0)
+                {
+                    kourseEur = Convert.ToDouble(exchange.EurBuyLabel.Text);
 
-                double usd = Convert.ToDouble(EurText.Text);
+                    double usd = Convert.ToDouble(EurText.Text);
 
-                double pro = kourseEur * usd;
+                    double pro = kourseEur * usd;
 
-                UahEurText.Text = pro.ToString();
+                    UahEurText.Text = pro.ToString();
+                }
             }
         }
 
@@ -74,23 +88,29 @@ using System.Drawing;
 
             if (PlnText.Text.Length == 0)
             {
-                koursePln = Convert.ToDouble(exchange.PlnBuyLabel.Text);
+                if (UahPlnText.Text.Length > 0)
+                {
+                    koursePln = Convert.ToDouble(exchange.PlnBuyLabel.Text);
 
-                double uah = Convert.ToDouble(UahPlnText.Text);
+                    double uah = Convert.ToDouble(UahPlnText.Text);
 
-                double quotient = uah / koursePln;
+                    double quotient = uah / koursePln;
 
-                UsdText.Text = quotient.ToString();
+                    UsdText.Text = quotient.ToString();
+                }
             }
             else
             {
-                koursePln = Convert.ToDouble(exchange.PlnBuyLabel.Text);
+                if (PlnText.Text.Length > 0)
+                {
+                    koursePln = Convert.ToDouble(exchange.PlnBuyLabel.Text);
 
-                double usd = Convert.ToDouble(PlnText.Text);
+                    double usd = Convert.ToDouble(PlnText.Text);
 
-                double pro = koursePln * usd;
+                    double pro = koursePln * usd;
 
-                UahPlnText.Text = pro.ToString();
+                    UahPlnText.Text = pro.ToString();
+                }
             }
         }
 
@@ -204,11 +224,6 @@ using System.Drawing;
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void PlnBuyingLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BuyingLabel_MouseDown(object sender, MouseEventArgs e)
         {
             int xMouseLocationOnScreen;
@@ -240,5 +255,7 @@ using System.Drawing;
                 this.pressingTheLeftMouseButton = false;
             }
         }
+
+       
     }
 }

@@ -87,6 +87,7 @@
             // SignInButton
             // 
             this.SignInButton.BackColor = System.Drawing.Color.White;
+            this.SignInButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignInButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignInButton.Location = new System.Drawing.Point(115, 299);
             this.SignInButton.Name = "SignInButton";
@@ -116,6 +117,7 @@
             // 
             this.ResetPasswordLabelLink.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
             this.ResetPasswordLabelLink.BackColor = System.Drawing.Color.Transparent;
+            this.ResetPasswordLabelLink.Cursor = System.Windows.Forms.Cursors.Help;
             this.ResetPasswordLabelLink.DisabledLinkColor = System.Drawing.Color.Transparent;
             this.ResetPasswordLabelLink.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ResetPasswordLabelLink.LinkColor = System.Drawing.Color.White;
@@ -132,6 +134,7 @@
             // ComeBackButton
             // 
             this.ComeBackButton.BackColor = System.Drawing.Color.White;
+            this.ComeBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComeBackButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ComeBackButton.Location = new System.Drawing.Point(115, 369);
             this.ComeBackButton.Name = "ComeBackButton";

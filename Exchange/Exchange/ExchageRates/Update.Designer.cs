@@ -69,6 +69,7 @@
             // TurnButton
             // 
             this.TurnButton.BackColor = System.Drawing.Color.Black;
+            this.TurnButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TurnButton.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TurnButton.ForeColor = System.Drawing.Color.Gold;

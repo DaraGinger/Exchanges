@@ -18,27 +18,33 @@
         
         private void CalculateUsdButton_Click(object sender, EventArgs e)
         {
-            double koursePln;
+            double kourseUsd;
 
-            if (PlnText.Text.Length == 0)
+            if (UsdText.Text.Length == 0)
             {
-                koursePln = Convert.ToDouble(exchange.PlnSellLabel.Text);
+                if (UahUsdText.Text.Length > 0)
+                {
+                    kourseUsd = Convert.ToDouble(exchange.UsdSellLabel.Text);
 
-                double uah = Convert.ToDouble(UahPlnText.Text);
+                    double uah = Convert.ToDouble(UahPlnText.Text);
 
-                double quotient = uah / koursePln;
+                    double quotient = uah / kourseUsd;
 
-                UsdText.Text = quotient.ToString();
+                    UsdText.Text = quotient.ToString();
+                }
             }
             else
             {
-                koursePln = Convert.ToDouble(exchange.PlnSellLabel.Text);
+                if (UsdText.Text.Length > 0)
+                {
+                    kourseUsd = Convert.ToDouble(exchange.PlnSellLabel.Text);
 
-                double usd = Convert.ToDouble(PlnText.Text);
+                    double usd = Convert.ToDouble(PlnText.Text);
 
-                double pro = koursePln * usd;
+                    double pro = kourseUsd * usd;
 
-                UahPlnText.Text = pro.ToString();
+                    UahPlnText.Text = pro.ToString();
+                }
             }
 
         }
@@ -49,23 +55,29 @@
 
             if (EurText.Text.Length == 0)
             {
-                kourseEur = Convert.ToDouble(exchange.EurSellLabel.Text);
+                if (UahEurText.Text.Length > 0)
+                {
+                    kourseEur = Convert.ToDouble(exchange.EurSellLabel.Text);
 
-                double uah = Convert.ToDouble(UahEurText.Text);
+                    double uah = Convert.ToDouble(UahEurText.Text);
 
-                double quotient = uah / kourseEur;
+                    double quotient = uah / kourseEur;
 
-                EurText.Text = quotient.ToString();
+                    EurText.Text = quotient.ToString();
+                }
             }
             else
             {
-                kourseEur = Convert.ToDouble(exchange.EurSellLabel.Text);
+                if (EurText.Text.Length > 0)
+                {
+                    kourseEur = Convert.ToDouble(exchange.EurSellLabel.Text);
 
-                double usd = Convert.ToDouble(EurText.Text);
+                    double usd = Convert.ToDouble(EurText.Text);
 
-                double pro = kourseEur * usd;
+                    double pro = kourseEur * usd;
 
-                UahEurText.Text = pro.ToString();
+                    UahEurText.Text = pro.ToString();
+                }
             }
         }
 
@@ -75,23 +87,29 @@
 
             if (PlnText.Text.Length == 0)
             {
-                koursePln = Convert.ToDouble(exchange.PlnSellLabel.Text);
+                if (UahPlnText.Text.Length > 0)
+                {
+                    koursePln = Convert.ToDouble(exchange.PlnSellLabel.Text);
 
-                double uah = Convert.ToDouble(UahPlnText.Text);
+                    double uah = Convert.ToDouble(UahPlnText.Text);
 
-                double quotient = uah / koursePln;
+                    double quotient = uah / koursePln;
 
-                UsdText.Text = quotient.ToString();
+                    UsdText.Text = quotient.ToString();
+                }
             }
             else
             {
-                koursePln = Convert.ToDouble(exchange.PlnSellLabel.Text);
+                if (PlnText.Text.Length > 0)
+                {
+                    koursePln = Convert.ToDouble(exchange.PlnSellLabel.Text);
 
-                double usd = Convert.ToDouble(PlnText.Text);
+                    double usd = Convert.ToDouble(PlnText.Text);
 
-                double pro = koursePln * usd;
+                    double pro = koursePln * usd;
 
-                UahPlnText.Text = pro.ToString();
+                    UahPlnText.Text = pro.ToString();
+                }
             }
         }
 

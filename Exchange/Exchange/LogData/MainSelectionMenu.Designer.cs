@@ -81,6 +81,7 @@ namespace Exchange.LogData
             // SignInButton
             // 
             this.SignInButton.BackColor = System.Drawing.SystemColors.Window;
+            this.SignInButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignInButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignInButton.Location = new System.Drawing.Point(115, 196);
             this.SignInButton.Name = "SignInButton";
@@ -93,6 +94,7 @@ namespace Exchange.LogData
             // SignUpButton
             // 
             this.SignUpButton.BackColor = System.Drawing.SystemColors.Window;
+            this.SignUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignUpButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignUpButton.Location = new System.Drawing.Point(115, 316);
             this.SignUpButton.Name = "SignUpButton";

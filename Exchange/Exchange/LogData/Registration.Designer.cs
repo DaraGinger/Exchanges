@@ -45,6 +45,7 @@
             // SignUpButton
             // 
             this.SignUpButton.BackColor = System.Drawing.SystemColors.Window;
+            this.SignUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignUpButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignUpButton.Location = new System.Drawing.Point(115, 365);
             this.SignUpButton.Name = "SignUpButton";
@@ -138,6 +139,7 @@
             // ComeBackButton
             // 
             this.ComeBackButton.BackColor = System.Drawing.Color.White;
+            this.ComeBackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComeBackButton.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ComeBackButton.Location = new System.Drawing.Point(115, 428);
             this.ComeBackButton.Name = "ComeBackButton";

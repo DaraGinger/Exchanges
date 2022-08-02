@@ -188,7 +188,6 @@
             this.PlnBuyingLabel.Size = new System.Drawing.Size(92, 38);
             this.PlnBuyingLabel.TabIndex = 15;
             this.PlnBuyingLabel.Text = "PLN :";
-            this.PlnBuyingLabel.Click += new System.EventHandler(this.PlnBuyingLabel_Click);
             // 
             // UahPlnText
             // 
@@ -221,6 +220,7 @@
             // CalculateUsdButton
             // 
             this.CalculateUsdButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CalculateUsdButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculateUsdButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CalculateUsdButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateUsdButton.ForeColor = System.Drawing.Color.Gold;
@@ -235,6 +235,7 @@
             // CalculateEurButton
             // 
             this.CalculateEurButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CalculateEurButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculateEurButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CalculateEurButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculateEurButton.ForeColor = System.Drawing.Color.Gold;
@@ -249,6 +250,7 @@
             // CalculatePlnButton
             // 
             this.CalculatePlnButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CalculatePlnButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculatePlnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CalculatePlnButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CalculatePlnButton.ForeColor = System.Drawing.Color.Gold;
@@ -263,6 +265,7 @@
             // BackButton
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BackButton.ForeColor = System.Drawing.Color.Gold;
