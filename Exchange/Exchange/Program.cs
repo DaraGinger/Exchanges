@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Exchange
+﻿namespace Exchange
 {
+    using System;
+    using System.Windows.Forms;
+    using global::Exchange.LogData;
+
     internal static class Program
     {
         /// <summary>
@@ -16,7 +14,8 @@ namespace Exchange
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Exchange());
+            // Application.Run(new Exchange());
+            Application.Run(new MainSelectionMenu());
         }
     }
 }
