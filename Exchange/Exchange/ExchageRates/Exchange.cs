@@ -49,11 +49,13 @@
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            File.Create(path).Close();
-            File.WriteAllText(path, $"Buy \t    \t Sell \t \t \t \t \t \t \t \t \t \t \t \t \t" +
-                                    $"{UsdBuyLabel.Text} \t {UsdLabel.Text} \t {UsdSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
-                                    $"{EurBuyLabel.Text} \t {EurLabel.Text} \t {EurSellLabel.Text} \t \t \t \t \t \t \t \t \t \t \t \t \t" +
-                                    $"{PlnBuyLabel.Text} \t {PlnLabel.Text} \t {PlnSellLabel.Text} ");
+            StreamWriter kourse = new StreamWriter(path);
+
+            kourse.WriteLine("Buy \t    \t Sell");
+            kourse.WriteLine($"{UsdBuyLabel.Text} \t {UsdLabel.Text} \t {UsdSellLabel.Text}");
+            kourse.WriteLine($"{EurBuyLabel.Text} \t {EurLabel.Text} \t {EurSellLabel.Text} \n");
+            kourse.WriteLine($"{PlnBuyLabel.Text} \t {PlnLabel.Text} \t {PlnSellLabel.Text} ");
+            kourse.Close();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
