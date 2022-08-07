@@ -96,7 +96,7 @@
 
                     double quotient = uah / koursePln;
 
-                    UsdText.Text = quotient.ToString();
+                    PlnText.Text = quotient.ToString();
                 }
             }
             else

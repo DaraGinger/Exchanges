@@ -26,7 +26,7 @@
                 {
                     kourseUsd = Convert.ToDouble(exchange.UsdSellLabel.Text);
 
-                    double uah = Convert.ToDouble(UahPlnText.Text);
+                    double uah = Convert.ToDouble(UahUsdText.Text);
 
                     double quotient = uah / kourseUsd;
 
@@ -37,13 +37,13 @@
             {
                 if (UsdText.Text.Length > 0)
                 {
-                    kourseUsd = Convert.ToDouble(exchange.PlnSellLabel.Text);
+                    kourseUsd = Convert.ToDouble(exchange.UsdSellLabel.Text);
 
-                    double usd = Convert.ToDouble(PlnText.Text);
+                    double usd = Convert.ToDouble(UsdText.Text);
 
                     double pro = kourseUsd * usd;
 
-                    UahPlnText.Text = pro.ToString();
+                    UahUsdText.Text = pro.ToString();
                 }
             }
 
